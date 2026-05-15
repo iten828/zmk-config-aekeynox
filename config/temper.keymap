@@ -8,58 +8,5 @@
 LT1 LT2 LT3  RT3 RT2 RT1
 
 #include <aekeynox/selenium.keymap>
-#include <ergol-on-azerty/ergol-on-azerty.keymap>
-
-
-
-/ {
-  keymap {
-    compatible = "zmk,keymap";
-
-
-// Common layers -----------------------------------------------------------------------------------------------
-
-   // 18.Gaming layer -- TODO
-    //                --
-    //                --
-    gaming_layer {
-            label = "Gaming";
-            display-name = "Gaming";
-            bindings = <
-  &kp Q   &kp W  &kp E  &kp R  &kp T      &kp Y  &kp U  &kp I       &kp O    &kp P
-  HRM_GA  &kp S  &kp D  &kp F  &kp G      &kp H  &kp J  &kp K       &kp L    &kp SEMI
-  HRM_GZ  &kp X  &kp C  &kp V  &kp B      &kp N  &kp M  &kp COMMA   &kp DOT  &kp FSLH
-    &kp LALT  &kp SPACE RTHUMB_REACH      RTHUMB_REACH  RTHUMB_HOME RTHUMB_TUCK
-            >;
-        };
-
-   // 19. Functions layer --
-    //                    --
-    Functions {
-            label = "Functions";
-            display-name = "Functions";
-            bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &rgb_ug RGB_TOG          &to EL_LAYER    &kp C_PREV      &kp C_VOL_UP      &kp C_BRI_UP         &kp SLCK
-&kp F5  &kp F6   &kp F7   &kp F8   &rgb_ug RGB_EFF          &trans          &hrm LALT C_PP  &hrm RCTL C_MUTE  &hrm RGUI C_AL_LOCK  &hrm LSHIFT PSCRN
-&kp F9  &kp F10  &kp F11  &kp F12  &to GAME_LAYER           &to BASE_LAYER  &kp C_NEXT      &kp C_VOL_DN      &kp C_BRI_DN         &kp INS
-                 &mo BT   &trans   &trans                   &trans          &trans          &trans
-            >;
-        };
-
-    // 20. BlueTooth layer --
-    //                    --
-    BT {
-            label = "BT";
-            display-name = "BT";
-            bindings = <
-&kp N1        &kp N2           &kp N3        &kp N4        &kp N5               &kp N6    &kp N7    &kp N8     &kp N9     &kp N0
-&bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4         &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans
-&bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock       &trans    &trans    &trans     &trans     &trans
-                               &trans        &trans        &trans               &trans    &trans    &kp SPACE
-            >;
-
-        };
-    };
-};
-
+//#include <ergol-on-azerty/ergol-on-azerty.keymap>
 
