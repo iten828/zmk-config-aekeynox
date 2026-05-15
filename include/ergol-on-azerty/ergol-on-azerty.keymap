@@ -164,7 +164,7 @@
                          &trans     &kp RS(SPACE) &trans            &trans       &kp LS(SPACE)  &kp RALT
             >;
         };
-
+/*
 // Common layers -----------------------------------------------------------------------------------------------
 
    // 18.Gaming layer -- TODO
@@ -180,7 +180,7 @@
     &kp LALT  &kp SPACE RTHUMB_REACH      RTHUMB_REACH  RTHUMB_HOME RTHUMB_TUCK
             >;
         };
-/*
+
    // 19. Functions layer --
     //                    --
     Functions {
@@ -193,7 +193,7 @@
                  &mo BT   &trans   &trans                   &trans          &trans          &trans
             >;
         };
-*/
+
     // 20. BlueTooth layer --
     //                    --
     BT {
@@ -207,7 +207,7 @@
             >;
 
         };
-
+*/
     };
 };
 
