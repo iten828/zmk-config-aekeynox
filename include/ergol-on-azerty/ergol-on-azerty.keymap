@@ -114,7 +114,7 @@
                      &trans &trans &trans               &trans       &trans        &trans
             >;
         };
-
+/*
     // 14. Ergol VimNav layer --
     //                        --
     ergol_vim_nav_layer {
@@ -126,7 +126,7 @@
  &kp CAPSLOCK  &lt FUNCTION_LAYER DEL  &mo EL_NUM_ROW_LAYER    &trans   &mo FUNCTION_LAYER  &EZ_LSK(RALT)
       >;
     };
-
+*/
     // 15. Ergol NumNav --
     //                  --
     ergol_numnav_layer {
@@ -152,7 +152,7 @@
                 &trans     &sc FUNCTION_LAYER DEL       &kp LS(TAB)         &kp ESCAPE             &trans       &EZ_LSK(RALT)
             >;
         };
-
+/*
     // 17. NumRow layer --
     //                  --
     ergol_num_row_layer {
@@ -164,6 +164,7 @@
                          &trans     &kp RS(SPACE) &trans            &trans       &kp LS(SPACE)  &kp RALT
             >;
         };
+*/
 /*
 // Common layers -----------------------------------------------------------------------------------------------
 
