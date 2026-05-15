@@ -10,6 +10,7 @@
 
 / {
   keymap {
+    compatible = "zmk,keymap";
 
     // 7. Ergol over Windows azerty layer --
     //                                    -- Configuré en mode HT_HOME_ROW_MODS
