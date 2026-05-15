@@ -9,14 +9,14 @@
 #define EL_NUM_LOCK_LAYER 11
 #define EL_SYMBOLS_LAYER  12
 #define EL_SSYMBOLS_LAYER 13
-//#define EL_VIM_NAV_LAYER  14
-#define EL_NUM_NAV_LAYER  14
-#define EL_SNUM_NAV_LAYER 15
-//#define EL_NUM_ROW_LAYER  17
+#define EL_VIM_NAV_LAYER  14
+#define EL_NUM_NAV_LAYER  15
+#define EL_SNUM_NAV_LAYER 16
+#define EL_NUM_ROW_LAYER  17
 
-#define GAME_LAYER        16
-#define FUNCTION_LAYER    17
-#define BT                18
+#define GAME_LAYER        18
+#define FUNCTION_LAYER    19
+#define BT                20
 
 /**
  * Home Rew

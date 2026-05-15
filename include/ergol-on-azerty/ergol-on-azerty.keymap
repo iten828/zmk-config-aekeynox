@@ -1,4 +1,8 @@
 
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
  // Defines keys and macro for ergo-l emulation over windows azerty
  // copy of https://github.com/parinacota/dragon46_zmk/tree/main from Parinacota
 #include <ergol-on-azerty/keymap_french.h>
@@ -114,7 +118,7 @@
                      &trans &trans &trans               &trans       &trans        &trans
             >;
         };
-/*
+
     // 14. Ergol VimNav layer --
     //                        --
     ergol_vim_nav_layer {
@@ -126,7 +130,7 @@
  &kp CAPSLOCK  &lt FUNCTION_LAYER DEL  &mo EL_NUM_ROW_LAYER    &trans   &mo FUNCTION_LAYER  &EZ_LSK(RALT)
       >;
     };
-*/
+
     // 15. Ergol NumNav --
     //                  --
     ergol_numnav_layer {
@@ -152,7 +156,7 @@
                 &trans     &sc FUNCTION_LAYER DEL       &kp LS(TAB)         &kp ESCAPE             &trans       &EZ_LSK(RALT)
             >;
         };
-/*
+
     // 17. NumRow layer --
     //                  --
     ergol_num_row_layer {
@@ -164,8 +168,8 @@
                          &trans     &kp RS(SPACE) &trans            &trans       &kp LS(SPACE)  &kp RALT
             >;
         };
-*/
-/*
+
+
 // Common layers -----------------------------------------------------------------------------------------------
 
    // 18.Gaming layer -- TODO
@@ -208,7 +212,6 @@
             >;
 
         };
-*/
     };
 };
 
