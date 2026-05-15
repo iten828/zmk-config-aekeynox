@@ -16,7 +16,7 @@
 #define NAV_NUM_LAYER  4
 #define NUM_ROW_LAYER  5
 #define FN_MEDIA_LAYER 6
-
+/*
 #define EL_LAYER           7
 #define EL_SLAYER          8
 #define EL_1DK_LAYER       9
@@ -32,7 +32,7 @@
 #define GAME_LAYER        18
 #define FUNCTION_LAYER    19
 #define BT                20
-
+*/
 
 // Potentially used by other keymaps deriving from this one, who may add extra layers.
 // Make sure this stays equal to <index_of_last_layer> + 1
@@ -108,7 +108,8 @@
 #else
   #define NAV_LAYER NAV_NUM_LAYER
   #define NUM_LAYER NAV_NUM_LAYER
-  #define HRM_LAYER FN_MEDIA_LAYER
+//  #define HRM_LAYER FN_MEDIA_LAYER
+  #define HRM_LAYER FUNCTION_LAYER
   #define S34_LAYER NAV_NUM_LAYER
   #define REACH_TAP TAB
 #endif
