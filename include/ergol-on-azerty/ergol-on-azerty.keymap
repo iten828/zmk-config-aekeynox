@@ -8,9 +8,9 @@
 #include <ergol-on-azerty/hold_taps_emul.dtsi>
 
 
+/ {
+  keymap {
 
-
-// Ergo-l over Windows Azerty ----------------------------------------------------------------------------------
     // 7. Ergol over Windows azerty layer --
     //                                    -- Configuré en mode HT_HOME_ROW_MODS
     //                                    -- les autres modes n’ont pas été testé et nécessitent encore du travail.
