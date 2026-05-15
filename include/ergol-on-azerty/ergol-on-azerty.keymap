@@ -1,0 +1,212 @@
+
+ // Defines keys and macro for ergo-l emulation over windows azerty
+ // copy of https://github.com/parinacota/dragon46_zmk/tree/main from Parinacota
+#include <ergol-on-azerty/keymap_french.h>
+ // Defines selenium thumb keys and hrm for ergo-l emulation over windows azerty
+ // Based on Selenium from https://github.com/Nuclear-Squid/zmk-keyboard-quacken/tree/main
+ // Works for non-vi HRM, others conf are not tested and stil need some work.
+#include <ergol-on-azerty/hold_taps_emul.dtsi>
+
+
+
+
+// Ergo-l over Windows Azerty ----------------------------------------------------------------------------------
+    // 7. Ergol over Windows azerty layer --
+    //                                    -- Configuré en mode HT_HOME_ROW_MODS
+    //                                    -- les autres modes n’ont pas été testé et nécessitent encore du travail.
+    //
+    //                                    -- Le shift HRM est activé, car c’est le seul moyen d’avoir shift pour
+    //                                    -- certains raccourci clavier (exemple shift + clic). Shift n’est pas
+    //                                    -- un vrai modifieur global mais active des layers du fait des limitations
+    //                                    -- inhérentes à l’émulation. On n’a donc plus de vrai modifieur shift global
+    //                                    -- sur la touche shift.
+    //                                    -- Les raccouris shift + enter, shift + numnav ou shift + sym fonctionnent
+    //                                    -- avec la touche shift
+    //                                    -- Pour les autres, il faut passer par le shift en HRM.
+    //                                    -- exemple: shift+clic …
+    ergol-layer {
+            label = "Ergo-l";
+            display-name = "Ergo-l";
+            bindings = <
+  &kp FR_Q  &kp FR_C  &kp FR_O     &kp FR_P  &kp FR_W        &kp FR_J    &kp FR_M  &kp FR_D  &sl EL_1DK_LAYER  &kp FR_Y
+  HRM_FR_A  HRM_S     HRM_E        HRM_N     &kp FR_F        &kp FR_L    HRM_R     HRM_T     HRM_I             HRM_FR_U
+  &kp FR_Z  &kp FR_X  &kp FR_MINS  &kp FR_V  &kp FR_B        &kp FR_DOT  &kp FR_H  &kp FR_G  &kp FR_COMM       &kp FR_K
+      EL_LTHUMB_TUCK  EL_LTHUMB_HOME  EL_LTHUMB_REACH        EL_RTHUMB_REACH  EL_RTHUMB_HOME EL_RTHUMB_TUCK
+            >;
+        };
+
+    // 8. Ergol Shift --
+    //                -- On shifte les touches 1 à 1 plutôt que d’utiliser le modifieur shift global.
+    //                -- Ça permet d’avoir une
+    //                -- meilleure gestion du shift sur les couches sym et navnum. Je n’ai pas su faire autrement.
+    sergol-layer {
+            label = "Shift";
+            display-name = "Shift";
+            bindings = <
+  &kp LS(FR_Q)  &kp LS(FR_C)  &kp LS(FR_O)  &kp LS(FR_P)  &kp LS(FR_W)      &kp LS(FR_J)  &kp LS(FR_M)  &kp LS(FR_D)  &kp FR_EXLM   &kp LS(FR_Y)
+  &kp LS(FR_A)  &kp LS(FR_S)  &kp LS(FR_E)  &kp LS(FR_N)  &kp LS(FR_F)      &kp LS(FR_L)  &kp LS(FR_R)  &kp LS(FR_T)  &kp LS(FR_I)  &kp LS(FR_U)
+  &kp LS(FR_Z)  &kp LS(FR_X)  &kp FR_QUES   &kp LS(FR_V)  &kp LS(FR_B)      &kp FR_COLN   &kp LS(FR_H)  &kp LS(FR_G)  &kp FR_SCLN   &kp LS(FR_K)
+                              &none         &trans        &trans            EL_SHIFTED_RTHUMB_REACH  EL_SHIFTED_RTHUMB_HOME  EL_SHIFED_RTHUMB_TUCK
+           >;
+        };
+
+    // 9. Ergol 1DK layer --
+    //                    --
+    ergol_1dk_layer {
+            label = "1dk";
+            display-name = "1dk";
+            bindings = <
+  &circ FR_A   &kp FR_CCED    &a01xx K5 K6  &circ FR_O    &kp FR_DEG       &to EL_LAYER  &kp FR_MICR   &kp FR_UNDS    &kp FR_DIAE   &circ FR_U
+  &kp FR_AGRV  &kp FR_EACU    &kp FR_EGRV   &circ FR_E    &tild FR_N       &kp FR_LPRN   &kp FR_RPRN   &circ FR_I     &diae FR_I    &kp FR_UGRV
+  &a1xx K4 K5  &a02xx K2 K3   &a01xx K7 K3  &a01xx K5 K0  &a01xx K5 K1     &a01xx K3 K3  &https        &to EL_LAYER   &a01xx K8 K3  &a01xx K6 K9
+                         &sl EL_S1DK_LAYER     &trans     &trans           &trans        &a01xx K4 K6  &trans
+            >;
+        };
+
+    // 10. Ergol Shift 1DK --
+    //                 --
+    sergol_1dk_layer {
+            label = "s1dk";
+            display-name = "s1dk";
+            bindings = <
+  &circ LS(FR_A)  &a01xx K9 K9  &a01xx K4 K0    &circ LS(FR_O)  &to EL_LAYER         &to EL_LAYER  &to EL_LAYER  &to EL_LAYER    &circ LS(FR_U)  &to EL_LAYER
+  &agrv LS(FR_A)  &a1xx K4 K4   &agrv LS(FR_E)  &circ LS(FR_E)  &tild LS(FR_N)       &to EL_LAYER  &to EL_LAYER  &circ LS(FR_I)  &diae LS(FR_I)  &agrv LS(FR_U)
+  &a01xx K9 K8    &to EL_LAYER  &to EL_LAYER    &to EL_LAYER    &to EL_LAYER         &to EL_LAYER  &to EL_LAYER  &to EL_LAYER    &ax K7          &a01xx K7 K4
+                                &trans          &trans          &trans               &trans        &trans        &trans
+            >;
+        };
+
+    // 11. Ergol NumLock --
+    //                   --
+     ergol_num_lock_layer {
+            display-name = "NumLock";
+            bindings = <
+  &kp ESC  &kp HOME &kp UP   &kp END   &kp PG_UP                      &to EL_LAYER  &kp FR_7   &kp FR_8  &kp FR_9  &kp FR_SLSH
+  S_EQUAL  &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN                      &kp FR_MINS   &kp FR_4   &kp FR_5  &kp FR_6  &kp FR_0
+  S_MONEY  S_COLON  S_STAR   S_PLUS    S_PRCNT                        &kp FR_COMM   &kp FR_1   &kp FR_2  &kp FR_3  &kp FR_DOT
+  &sl EL_SNUM_NAV_LAYER  &sc EL_NUM_NAV_LAYER BACKSPACE  &kp (TAB)    &trans        &lt EL_NUM_NAV_LAYER LS(SPACE) &EZ_SL(EL_SYMBOLS_LAYER)
+            >;
+        };
+
+    // 12. Ergol SYM   --
+    //                 --
+     ergol_sym_layer {
+            label = "sym";
+            display-name = "Sym";
+            bindings = <
+ &a0xx K9 K4  &kp FR_LABK &kp FR_RABK &kp FR_DLR  &kp FR_PERC       &kp FR_AT   &kp FR_AMPR &kp FR_ASTR &kp FR_QUOT &kp FR_GRV
+ &kp FR_LCBR  &kp FR_LPRN &kp FR_RPRN &kp FR_RCBR &kp FR_EQL        &kp FR_BSLS &kp FR_PLUS &kp FR_MINS &kp FR_SLSH &kp FR_DQUO
+ &a01xx K2 K6 &kp FR_LBRC &kp FR_RBRC &kp FR_UNDS &kp FR_HASH       &kp FR_PIPE &kp FR_EXLM &kp FR_SCLN &kp FR_COLN &kp FR_QUES
+                    EL_SYM_NUM_LAYER  &kp SPACE   &kp ENTER         &trans      &trans      &trans
+            >;
+        };
+
+    // 13. Ergol SSYM  --
+    //                 --
+    sergol_sym_layer {
+            label = "ssym";
+            display-name = "ShfSym";
+            bindings = <
+ &kp FR_CIRC  &none  &none  &none  &a01xx K3 K7         &none        &none         &a02xx K1 K5  &none         &none   // ‰,×
+ &none        &none  &none  &none  &none                &none        &a01xx K7 K7  &a01xx K7 K5  &a02xx K4 K7  &none   // ±,¯,÷
+ &kp FR_TILD  &none  &none  &none  &none                &a2xx K2 K1  &a01xx K7 K2  &none         &kp FR_COLN   &none   // ¦,¬,:
+                     &trans &trans &trans               &trans       &trans        &trans
+            >;
+        };
+
+    // 14. Ergol VimNav layer --
+    //                        --
+    ergol_vim_nav_layer {
+             display-name = "VimNav";
+             bindings = <
+ &kp CAPS   EL_X_CLOSE  X_PREV     X_NEXT      &none           &kp HOME &kp PG_DN &kp PG_UP &kp END   &kp DEL
+ EL_X_ALL   EL_X_SAVE   X_SHTAB    &kp TAB     &none           &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none
+ EL_X_UNDO  EL_X_CUT    EL_X_COPY  EL_X_PASTE  EL_X_REDO       &none    &none     &none     &none     &none
+ &kp CAPSLOCK  &lt FUNCTION_LAYER DEL  &mo EL_NUM_ROW_LAYER    &trans   &mo FUNCTION_LAYER  &EZ_LSK(RALT)
+      >;
+    };
+
+    // 15. Ergol NumNav --
+    //                  --
+    ergol_numnav_layer {
+            label = "ergol-NumNav";
+            display-name = "NumNav";
+            bindings = <
+ &kp ESC    &kp HOME  &kp UP     &kp END     &kp PG_UP           &to EL_NUM_LOCK_LAYER  &kp FR_7   &kp FR_8  &kp FR_9  &kp FR_SLSH
+ EL_X_ALL   &kp LEFT  &kp DOWN   &kp RIGHT   &kp PG_DN           &kp FR_MINS            &kp FR_4   &kp FR_5  &kp FR_6  &kp FR_0
+ EL_X_UNDO  EL_X_CUT  EL_X_COPY  EL_X_PASTE  EL_X_REDO           &kp FR_COMM            &kp FR_1   &kp FR_2  &kp FR_3  &kp FR_DOT
+ &kp CAPSLOCK      &sc FUNCTION_LAYER DEL  &kp LS(TAB)           &kp ESCAPE             &lt FUNCTION_LAYER LS(SPACE)   &EZ_LSK(RALT)  // ajouter un modtap capslock/snumnav pour pouvoir faire shift depuis la NumNav ?
+            >;
+        };
+
+    // 16. Ergol Shift NumNav --
+    //                        --
+    sergol_numnav_layer {
+            label = "snumnav";
+            display-name = "sNumNav";
+            bindings = <
+  &kp ESC    &kp LS(HOME)  &kp LS(UP)    &kp LS(END)    &kp LS(PG_UP)       &kp EL_NUM_LOCK_LAYER  &kp FR_AMPR  &kp FR_ASTR  &kp FR_HASH  &kp FR_SLSH &trans
+  EL_X_ALL   &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(RIGHT)  &kp LS(PG_DN)       &kp FR_MINS            &kp FR_DLR   &kp FR_PERC  &a0xx K9 K4  &kp FR_AT   &trans
+  EL_X_UNDO  EL_X_CUT      EL_X_COPY     EL_X_PASTE     EL_X_REDO           &kp FR_COMM            &kp FR_EURO  &a1xx K7 K4  &a1xx K7 K5  &kp FR_DOT  &trans
+                &trans     &sc FUNCTION_LAYER DEL       &kp LS(TAB)         &kp ESCAPE             &trans       &EZ_LSK(RALT)
+            >;
+        };
+
+    // 17. NumRow layer --
+    //                  --
+    ergol_num_row_layer {
+      display-name = "NumRow";
+      bindings = <
+ &kp FR_EXLM  &kp FR_AT  &kp FR_HASH  &kp FR_DLR  &kp FR_PERC       &a0xx K9 K4  &kp FR_AMPR    &kp FR_ASTR  &kp FR_LPRN  &kp FR_RPRN  &trans
+ &kp FR_1     &kp FR_2   &kp FR_3     &kp FR_4    &kp FR_5          &kp FR_6     &kp FR_7       &kp FR_8     &kp FR_9     &kp FR_0     &trans
+ &none        &none      &none        &none       &none             &kp FR_MINS  &kp FR_COMM    &kp FR_DOT   &kp FR_COLN  &kp FR_SLSH  &trans
+                         &trans     &kp RS(SPACE) &trans            &trans       &kp LS(SPACE)  &kp RALT
+            >;
+        };
+
+// Common layers -----------------------------------------------------------------------------------------------
+
+   // 18.Gaming layer -- TODO
+    //                --
+    //                --
+    gaming_layer {
+            display-name = "Gaming";
+            bindings = <
+  &kp Q   &kp W  &kp E  &kp R  &kp T      &kp Y  &kp U  &kp I       &kp O    &kp P
+  HRM_GA  &kp S  &kp D  &kp F  &kp G      &kp H  &kp J  &kp K       &kp L    &kp SEMI
+  HRM_GZ  &kp X  &kp C  &kp V  &kp B      &kp N  &kp M  &kp COMMA   &kp DOT  &kp FSLH
+    &kp LALT  &kp SPACE RTHUMB_REACH      RTHUMB_REACH  RTHUMB_HOME RTHUMB_TUCK
+            >;
+        };
+
+   // 19. Functions layer --
+    //                    --
+    Functions {
+            label = "Functions";
+            display-name = "Functions";
+            bindings = <
+&kp F1  &kp F2   &kp F3   &kp F4   &rgb_ug RGB_TOG          &to EL_LAYER    &kp C_PREV      &kp C_VOL_UP      &kp C_BRI_UP         &kp SLCK
+&kp F5  &kp F6   &kp F7   &kp F8   &rgb_ug RGB_EFF          &trans          &hrm LALT C_PP  &hrm RCTL C_MUTE  &hrm RGUI C_AL_LOCK  &hrm LSHIFT PSCRN
+&kp F9  &kp F10  &kp F11  &kp F12  &to GAME_LAYER           &to BASE_LAYER  &kp C_NEXT      &kp C_VOL_DN      &kp C_BRI_DN         &kp INS
+                 &mo BT   &trans   &trans                   &trans          &trans          &trans
+            >;
+        };
+
+    // 20. BlueTooth layer --
+    //                    --
+    BT {
+            display-name = "BT";
+            bindings = <
+&kp N1        &kp N2           &kp N3        &kp N4        &kp N5               &kp N6    &kp N7    &kp N8     &kp N9     &kp N0
+&bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4         &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans
+&bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock       &trans    &trans    &trans     &trans     &trans
+                               &trans        &trans        &trans               &trans    &trans    &kp SPACE
+            >;
+
+            label = "BT";
+        };
+
+    };
+};
+
+
