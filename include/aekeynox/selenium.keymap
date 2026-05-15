@@ -130,8 +130,7 @@
     //                                    -- avec la touche shift
     //                                    -- Pour les autres, il faut passer par le shift en HRM.
     //                                    -- exemple: shift+clic …
-    ergol-layer {
-            label = "Ergo-l";
+    erogl-layer: ergol-layer {
             display-name = "Ergo-l";
             bindings = <
   &kp FR_Q  &kp FR_C  &kp FR_O     &kp FR_P  &kp FR_W        &kp FR_J    &kp FR_M  &kp FR_D  &sl EL_1DK_LAYER  &kp FR_Y
