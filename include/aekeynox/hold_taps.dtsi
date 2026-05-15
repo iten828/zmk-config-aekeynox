@@ -16,23 +16,7 @@
 #define NAV_NUM_LAYER  4
 #define NUM_ROW_LAYER  5
 #define FN_MEDIA_LAYER 6
-/*
-#define EL_LAYER           7
-#define EL_SLAYER          8
-#define EL_1DK_LAYER       9
-#define EL_S1DK_LAYER     10
-#define EL_NUM_LOCK_LAYER 11
-#define EL_SYMBOLS_LAYER  12
-#define EL_SSYMBOLS_LAYER 13
-#define EL_VIM_NAV_LAYER  14
-#define EL_NUM_NAV_LAYER  15
-#define EL_SNUM_NAV_LAYER 16
-#define EL_NUM_ROW_LAYER  17
 
-#define GAME_LAYER        18
-#define FUNCTION_LAYER    19
-#define BT                20
-*/
 #include <ergol-on-azerty/hold_taps_emul.dtsi>
 // Potentially used by other keymaps deriving from this one, who may add extra layers.
 // Make sure this stays equal to <index_of_last_layer> + 1
