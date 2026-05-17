@@ -1,6 +1,6 @@
 # This file describes the firmwares that are built by the GitHub Actions CI.
 # Supported hardware: https://zmk.dev/docs/hardware
-
+---
 include:
 
   ###
