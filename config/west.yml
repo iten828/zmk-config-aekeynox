@@ -2,10 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-#    - name: cfergeau
-#      url-base: https://github.com/cfergeau
-#    - name: NuclearSquid
-#      url-base: https://github.com/Nuclear-Squid
+    - name: cfergeau
+      url-base: https://github.com/cfergeau
+    - name: NuclearSquid
+      url-base: https://github.com/Nuclear-Squid
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -14,12 +14,11 @@ manifest:
       #revision: c62da0e16646d10240ba29191bdbcb5611b3a1af
       revision: v0.3
       import: app/west.yml
-#    - name: zmk-keyboard-quacken
-#      remote: NuclearSquid
-#      revision: zmk-main
-#    - name: zmk-config-totem
-#      remote: cfergeau
-#      revision: zmk-module
-
+    - name: zmk-keyboard-quacken
+      remote: NuclearSquid
+      revision: zmk-main
+    - name: zmk-config-totem
+      remote: cfergeau
+      revision: zmk-module
   self:
     path: config
