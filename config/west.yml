@@ -11,7 +11,8 @@ manifest:
       remote: zmkfirmware
       # Pin ZMK to the tip of the `main` branch on 2026-03-30.
       # https://github.com/Nuclear-Squid/zmk-keyboard-quacken/pull/49#issuecomment-4153385353
-      revision: c62da0e16646d10240ba29191bdbcb5611b3a1af
+      #revision: c62da0e16646d10240ba29191bdbcb5611b3a1af
+      revision: 0.3
       import: app/west.yml
     - name: zmk-keyboard-quacken
       remote: NuclearSquid
