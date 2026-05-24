@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/cfergeau
     - name: NuclearSquid
       url-base: https://github.com/Nuclear-Squid
-    - name: raeedcho
-      url-base: https://github.com/raeedcho
+    - name: iten828
+      url-base: https://github.com/iten828
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -22,8 +22,8 @@ manifest:
       remote: cfergeau
       revision: zmk-module
     - name: temper-zmk-config
-      remote: raeedcho
-      revision: main
+      remote: iten828
+      revision: enhancements
 
 
   self:
