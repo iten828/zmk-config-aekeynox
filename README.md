@@ -1,6 +1,6 @@
 # Ækeynox
 
-Ækeynox ZMK implementation of the ![Selenium] keymaps for the ![Temper] with added improvements for the temper.
+Ækeynox ZMK implementation of the [Selenium] keymaps for the [Temper] with added improvements for the temper.
 [temper]:       https://github.com/raeedcho/temper
 [Selenium]:     https://github.com/OneDeadKey/selenium
 
