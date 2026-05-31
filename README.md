@@ -16,3 +16,4 @@ There is some improvements of the official zmk Ækynox:
 ![Temper.](temper.jpg)
 ![Temper1.](temper1.jpg)
 ![Temper2.](temper2.jpg)
+![Temper3.](temper3.jpg)
