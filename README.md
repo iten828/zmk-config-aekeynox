@@ -1,8 +1,8 @@
 # Ækeynox
 
 Ækeynox ZMK implementation of the [Selenium] keymaps for the [Temper] with added improvements for the temper.
-[temper]:       https://github.com/raeedcho/temper
 [Selenium]:     https://github.com/OneDeadKey/selenium
+[Temper]:       https://github.com/raeedcho/temper
 
 There is some improvements of the official zmk Ækynox:
 • Add sleep features and zmk-studio as they are not included in the raeedcho [temper-zmk-config]
