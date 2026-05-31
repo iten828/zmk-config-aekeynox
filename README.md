@@ -7,8 +7,8 @@
 
 There is some improvements of the official zmk Ækynox:
 
--Add sleep features and zmk-studio as they are not included in the raeedcho [temper-zmk-config]
--Add a as much as possible complete Ergo-L emulation for windows azerty (only tested in HRM non VIM mode)
+- Add sleep features and zmk-studio as they are not included in the raeedcho [temper-zmk-config]
+- Add a as much as possible complete Ergo-L emulation for windows azerty (only tested in HRM non VIM mode)
 
 [temper-zmk-config]:   https://github.com/raeedcho/temper-zmk-config
 
