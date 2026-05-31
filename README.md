@@ -1,14 +1,14 @@
 # Ækeynox
 
-Ækeynox ZMK implementation of the [Selenium] keymaps for the [Temper] with added improvements for the temper.
+Ækeynox ZMK implementation of the [Selenium] keymaps for the [Temper] with added improvements.
 
 [Selenium]:     https://github.com/OneDeadKey/selenium
 [Temper]:       https://github.com/raeedcho/temper
 
-There is some improvements of the official zmk Ækynox:
+It keeps the Ækeynox implementation, but add:
 
-- Add sleep features and zmk-studio as they are not included in the raeedcho [temper-zmk-config]
-- Add a as much as possible complete Ergo-L emulation for windows azerty (only tested in HRM non VIM mode)
+- Sleep features and zmk-studio as they are not included in the raeedcho [temper-zmk-config]
+- An as much as possible complete Ergo-L emulation for windows azerty (only tested in HRM non vim variant)
 
 [temper-zmk-config]:   https://github.com/raeedcho/temper-zmk-config
 
