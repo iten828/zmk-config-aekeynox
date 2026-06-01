@@ -150,9 +150,9 @@
             label = "snumnav";
             display-name = "sNumNav";
             bindings = <
-  &kp ESC    &kp LS(HOME)  &kp LS(UP)    &kp LS(END)    &kp LS(PG_UP)       &kp EL_NUM_LOCK_LAYER  &kp FR_AMPR  &kp FR_ASTR  &kp FR_HASH  &kp FR_SLSH &trans
-  EL_X_ALL   &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(RIGHT)  &kp LS(PG_DN)       &kp FR_MINS            &kp FR_DLR   &kp FR_PERC  &a0xx K9 K4  &kp FR_AT   &trans
-  EL_X_UNDO  EL_X_CUT      EL_X_COPY     EL_X_PASTE     EL_X_REDO           &kp FR_COMM            &kp FR_EURO  &a1xx K7 K4  &a1xx K7 K5  &kp FR_DOT  &trans
+  &kp ESC    &kp LS(HOME)  &kp LS(UP)    &kp LS(END)    &kp LS(PG_UP)       &kp EL_NUM_LOCK_LAYER  &kp FR_AMPR  &kp FR_ASTR  &kp FR_HASH  &kp FR_SLSH
+  EL_X_ALL   &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(RIGHT)  &kp LS(PG_DN)       &kp FR_MINS            &kp FR_DLR   &kp FR_PERC  &a0xx K9 K4  &kp FR_AT
+  EL_X_UNDO  EL_X_CUT      EL_X_COPY     EL_X_PASTE     EL_X_REDO           &kp FR_COMM            &kp FR_EURO  &a1xx K7 K4  &a1xx K7 K5  &kp FR_DOT
                 &trans     &sc FUNCTION_LAYER DEL       &kp LS(TAB)         &kp ESCAPE             &trans       &EZ_LSK(RALT)
             >;
         };
@@ -162,9 +162,9 @@
     ergol_num_row_layer {
       display-name = "NumRow";
       bindings = <
- &kp FR_EXLM  &kp FR_AT  &kp FR_HASH  &kp FR_DLR  &kp FR_PERC       &a0xx K9 K4  &kp FR_AMPR    &kp FR_ASTR  &kp FR_LPRN  &kp FR_RPRN  &trans
- &kp FR_1     &kp FR_2   &kp FR_3     &kp FR_4    &kp FR_5          &kp FR_6     &kp FR_7       &kp FR_8     &kp FR_9     &kp FR_0     &trans
- &none        &none      &none        &none       &none             &kp FR_MINS  &kp FR_COMM    &kp FR_DOT   &kp FR_COLN  &kp FR_SLSH  &trans
+ &kp FR_EXLM  &kp FR_AT  &kp FR_HASH  &kp FR_DLR  &kp FR_PERC       &a0xx K9 K4  &kp FR_AMPR    &kp FR_ASTR  &kp FR_LPRN  &kp FR_RPRN
+ &kp FR_1     &kp FR_2   &kp FR_3     &kp FR_4    &kp FR_5          &kp FR_6     &kp FR_7       &kp FR_8     &kp FR_9     &kp FR_0
+ &none        &none      &none        &none       &none             &kp FR_MINS  &kp FR_COMM    &kp FR_DOT   &kp FR_COLN  &kp FR_SLSH
                          &trans     &kp RS(SPACE) &trans            &trans       &kp LS(SPACE)  &kp RALT
             >;
         };
