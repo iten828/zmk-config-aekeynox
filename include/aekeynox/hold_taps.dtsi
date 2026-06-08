@@ -20,7 +20,7 @@
 #include <ergol-on-azerty/hold_taps_emul.dtsi>
 // Potentially used by other keymaps deriving from this one, who may add extra layers.
 // Make sure this stays equal to <index_of_last_layer> + 1
-#define EXTRA_LAYERS_START_INDEX 21
+#define EXTRA_LAYERS_START_INDEX 23
 
 
 /**
