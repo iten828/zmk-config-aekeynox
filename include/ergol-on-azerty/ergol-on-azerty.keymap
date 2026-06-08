@@ -176,12 +176,12 @@
     //                --
     gaming_layer {
             label = "Gaming";
-q            display-name = "Gaming";
+            display-name = "Gaming";
             bindings = <
   &kp Q   &kp W  &kp E  &kp R  &kp T                                &kp Y  &kp U  &kp I       &kp O    &kp P
   HRM_GA  &kp S  &kp D  &kp F  &kp G                                &kp H  HRM_J  HRM_K       HRM_L    &kp SEMI
   HRM_GZ  &kp X  &kp C  &kp V  &kp B                                &kp N  &kp M  &kp COMMA   &kp DOT  &kp FSLH
-  &kp LALT   &lt G_NUM_ROW_LAYER BACKSPACE  LTHUMB_REACH    RTHUMB_REACH  &lt G_NUM_ROW_LAYER SPACE &mo G_SYMBOLS_LAYER
+  &kp LALT   &lt G_NUM_ROW_LAYER BACKSPACE  LTHUMB_REACH    RTHUMB_REACH  &lt G_NAVNUM_LAYER SPACE &mo G_SYMBOLS_LAYER
             >;
         };
 
@@ -194,12 +194,23 @@ q            display-name = "Gaming";
       bindings = <SELENIUM_KEYMAP_BINDINGS(
         &trans  ,  &kp RS(N1) &kp RS(N2) &kp RS(N3) &kp RS(N4) &kp RS(N5)   ,   &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0)  ,  &trans ,
         &trans  ,  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5       ,   &kp N6     &kp N7     &kp N8     &kp N9     &kp N0      ,  &trans ,
-        &trans  ,  &none      &none      &none      &none      &none        ,   S_MINUS    S_COMMA    S_DOT      S_COLON    S_FSLH      ,  &trans ,
-                                      &trans , &kp RS(SPACE) , &trans       ,   &trans , &kp LS(SPACE) , &kp RALT
+        &trans  ,  &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH     ,   S_MINUS    S_COMMA    S_DOT      S_COLON    S_FSLH      ,  &trans ,
+                                      &trans , &kp RS(SPACE) , &trans       ,   &kp ESC , &kp LS(SPACE) , &kp RALT
+      )>;
+    };
+    // 20.
+    gaming_nav_num_layer: gaming_nav_num_layer {
+      display-name = "NavNum";
+      bindings = <SELENIUM_KEYMAP_BINDINGS(
+        &trans  ,  &kp ESC  &kp HOME &kp UP   &kp END   &kp PG_UP   ,   &to NUM_LOCK_LAYER S_N7  S_N8  S_N9  S_FSLH  ,  &trans ,
+        &trans  ,  X_ALL    &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN   ,   S_MINUS            S_N4  S_N5  S_N6  S_N0    ,  &trans ,
+        &trans  ,  X_UNDO   X_CUT    X_COPY   X_PASTE   X_REDO      ,   S_COMMA            S_N1  S_N2  S_N3  S_DOT   ,  &trans ,
+      NAV_LTHUMB_TUCK , &sc FN_MEDIA_LAYER DEL , NAV_LTHUMB_REACH   ,   &kp ESCAPE , &lt FN_MEDIA_LAYER LS(SPACE) , &EZ_LSK(RALT)
       )>;
     };
 
-    // 20
+
+    // 21.
     //
     gaming_symbols_layer: gaming_symbols_layer {
       display-name = "Symbols";
@@ -211,7 +222,7 @@ q            display-name = "Gaming";
       )>;
     };
 
-    // 21. Functions layer --
+    // 22. Functions layer --
     //                    --
     Functions {
             label = "Functions";
@@ -224,7 +235,7 @@ q            display-name = "Gaming";
             >;
         };
 
-    // 22. BlueTooth layer --
+    // 23. BlueTooth layer --
     //                    --
     BT {
             label = "BT";
