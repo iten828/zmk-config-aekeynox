@@ -15,8 +15,10 @@
 #define EL_NUM_ROW_LAYER  17
 
 #define GAME_LAYER        18
-#define FUNCTION_LAYER    19
-#define BT                20
+#define G_NUM_ROW_LAYER   19
+#define G_SYMBOLS_LAYER   20
+#define FUNCTION_LAYER    21
+#define BT                22
 
 /**
  * Home Rew
