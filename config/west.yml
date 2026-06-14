@@ -8,8 +8,8 @@ manifest:
       url-base: https://github.com/Nuclear-Squid
     - name: rloutier
       url-base: https://github.com/rloutier
-#    - name: rschenk
-#      url-base: https://github.com/rschenk
+    - name: rschenk
+      url-base: https://github.com/rschenk
     - name: iten828
       url-base: https://github.com/iten828
   projects:
@@ -25,12 +25,13 @@ manifest:
       revision: zmk-main
     - name: zmk-config-totem
       remote: cfergeau
-      revision: zmk-module
+      revision: zmk-modulen
+    - name: zmk-config-go60
       remote: rloutier
       revision: main
-#    - name: zmk-keyboard-re-gret
-#      remote: rschenk
-#      revision: main
+    - name: zmk-keyboard-re-gret
+      remote: rschenk
+      revision: main
     - name: temper-zmk-config
       remote: iten828
       revision: enhancements
