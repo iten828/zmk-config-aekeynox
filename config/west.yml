@@ -26,12 +26,12 @@ manifest:
     - name: zmk-config-totem
       remote: cfergeau
       revision: zmk-module
-    - name: temper-zmk-config
       remote: rloutier
       revision: main
     - name: zmk-keyboard-re-gret
       remote: rschenk
       revision: main
+    - name: temper-zmk-config
       remote: iten828
       revision: enhancements
 
