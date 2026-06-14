@@ -25,7 +25,7 @@ manifest:
       revision: zmk-main
     - name: zmk-config-totem
       remote: cfergeau
-      revision: zmk-modulen
+      revision: zmk-module
     - name: zmk-config-go60
       remote: rloutier
       revision: main
