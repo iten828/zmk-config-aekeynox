@@ -114,7 +114,7 @@
   #define EL_RTHUMB_HOME   EL_RTHUMB_HRM
   #define EL_RTHUMB_TUCK   &EL_sym_shift_altgr
   #define EL_SHIFTED_RTHUMB_HOME  EL_SHIFTED_RTHUMB_HRM
-  #define EL_SHIFED_RTHUMB_TUCK &mo EL_SSYMBOLS_LAYER
+  #define EL_SHIFED_RTHUMB_TUCK &sl EL_SSYMBOLS_LAYER
   #define EL_SHIFTED_RTHUMB_REACH &kp LS(ENTER)
   // la ligne précédente doit être corrigée pour être dynamique
 #elifdef HT_TWO_THUMB_KEYS
