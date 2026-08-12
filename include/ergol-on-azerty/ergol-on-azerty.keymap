@@ -179,7 +179,7 @@
             display-name = "Gaming";
             bindings = <
   &kp Q   &kp W  &kp E  &kp R  &kp T                                &kp Y  &kp U  &kp I       &kp O    &kp P
-  &H4 A   &kp S  &kp D  &kp F  &kp G                                &kp H  &H1 J  &H2 K       &H3 L    &kp SEMI
+  &HRM_GA &kp S  &kp D  &kp F  &kp G                                &kp H  &H1 J  &H2 K       &H3 L    &kp SEMI
   &H2 Z   &kp X  &kp C  &kp V  &kp B                                &kp N  &kp M  &kp COMMA   &kp DOT  &kp FSLH
   &kp LALT   &lt G_NUM_ROW_LAYER BACKSPACE  LTHUMB_REACH    RTHUMB_REACH  &lt G_NAVNUM_LAYER SPACE &mo G_SYMBOLS_LAYER
             >;
