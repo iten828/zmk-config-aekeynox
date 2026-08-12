@@ -1,28 +1,20 @@
 Ækeynox
 ====================================================================================================
 
-Reference ZMK implementation of the [Arsenik] and [Selenium] keymaps,
-with first-class support for non-QWERTY layouts.
+Ækeynox ZMK implementation of the [Selenium] keymaps for the Raeedcho’s [Temper] with added improvements.
 
-[Arsenik]:      https://github.com/OneDeadKey/arsenik
 [Selenium]:     https://github.com/OneDeadKey/selenium
-[Selenium 2TK]: https://github.com/OneDeadKey/selenium/raw/main/selenium.png "Selenium, 2TK flavor"
+[Temper]:       https://github.com/raeedcho/temper
 
-| ![Selenium 2TK] |
-| :-: |
-| [Selenium flavors]:<br> [EZ], [TT], [HRM], [2TK] (pic) + [Vim variant] |
+It keeps the Ækeynox implementation, but add:
 
-[Selenium flavors]: https://onedeadkey.github.io/selenium
-[EZ]:               https://onedeadkey.github.io/selenium/#flavor-ez
-[TT]:               https://onedeadkey.github.io/selenium/#flavor-tt
-[HRM]:              https://onedeadkey.github.io/selenium/#flavor-hrm
-[2TK]:              https://onedeadkey.github.io/selenium/#flavor-2tk
-[Vim variant]:      https://onedeadkey.github.io/selenium/#vim-variant
+- An as much as possible complete Ergo-L emulation for windows azerty (only tested in HRM non vim variant)
 
-Customize your keymap once, and build it on all supported keebs.
+[temper-zmk-config]:   https://github.com/raeedcho/temper-zmk-config
 
 [Check the configuration guide.](include/aekeynox#readme)
 
+<<<<<<< HEAD
 
 In a Nutshell
 ----------------------------------------------------------------------------------------------------
@@ -126,3 +118,9 @@ Why the name?
 Any name containing `key` and easy to search would’ve been a good fit, but here’s Nox:
 
 ![My name is Nox and I approve this project.](nox.jpg)
+=======
+![Temper.](temper.jpg)
+![Temper1.](temper1.jpg)
+![Temper2.](temper2.jpg)
+![Temper3.](temper3.jpg)
+>>>>>>> 3cb1870 (Temper configuration and Ergo-L emulation)
