@@ -3,7 +3,7 @@
 
 include:
 
-  # Temper chocofi  + nice!nano v2
+ # Temper chocofi  + nice!nano v2
   - board: nice_nano@2//zmk
     shield: temper_left nice_view_adapter nice_view
     artifact-name: temper_left
