@@ -218,4 +218,12 @@
     flavor = "tap-preferred";
     bindings = <&EL_lkp>, <&EL_losm>;
   };
+// pour ajout shift depuis nav
+  sl_mo: sticky_layer_momentary {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <1>;
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    bindings = <&mo>, <&sl>;
+    };
 };
