@@ -116,6 +116,7 @@
   #define EL_SHIFTED_RTHUMB_HOME  EL_SHIFTED_RTHUMB_HRM
   #define EL_SHIFED_RTHUMB_TUCK &sl EL_SSYMBOLS_LAYER
   #define EL_SHIFTED_RTHUMB_REACH &kp LS(ENTER)
+  #define EL_NAVNUM_RTHUMB_TUCK  &sl_mo EL_SNUM_NAV_LAYER EL_SNUM_NAV_LAYER
   // la ligne précédente doit être corrigée pour être dynamique
 #elifdef HT_TWO_THUMB_KEYS
   #define EL_LTHUMB_TUCK   &mt LSHIFT REACH_TAP
@@ -218,6 +219,7 @@
     flavor = "tap-preferred";
     bindings = <&EL_lkp>, <&EL_losm>;
   };
+
 // pour ajout shift depuis nav
   sl_mo: sticky_layer_momentary {
     compatible = "zmk,behavior-hold-tap";
