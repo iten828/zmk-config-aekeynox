@@ -139,7 +139,7 @@
  &kp ESC    &kp HOME  &kp UP     &kp END     &kp PG_UP           &to EL_NUM_LOCK_LAYER  &kp FR_7   &kp FR_8  &kp FR_9  &kp FR_SLSH
  EL_X_ALL   &kp LEFT  &kp DOWN   &kp RIGHT   &kp PG_DN           &kp FR_MINS            &kp FR_4   &kp FR_5  &kp FR_6  &kp FR_0
  EL_X_UNDO  EL_X_CUT  EL_X_COPY  EL_X_PASTE  EL_X_REDO           &kp FR_COMM            &kp FR_1   &kp FR_2  &kp FR_3  &kp FR_DOT
- &sl_mo EL_SNUM_NAV_LAYER   &sc FUNCTION_LAYER DEL  &kp LS(TAB)           &kp ESCAPE             &lt FUNCTION_LAYER LS(SPACE)   &EZ_LSK(RALT)  // ajouter un modtap capslock/snumnav pour pouvoir faire shift depuis la NumNav ?
+ &sl_mo EL_SNUM_NAV_LAYER EL_SNUM_NAV_LAYER   &sc FUNCTION_LAYER DEL  &kp LS(TAB)           &kp ESCAPE             &lt FUNCTION_LAYER LS(SPACE)   &EZ_LSK(RALT)  // ajouter un modtap capslock/snumnav pour pouvoir faire shift depuis la NumNav ?
             >;
         };
 
