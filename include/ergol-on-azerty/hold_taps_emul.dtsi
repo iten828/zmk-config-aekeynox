@@ -221,6 +221,9 @@
   };
 
 // pour ajout shift depuis nav
+// probablement à améliorer
+// À renommer pour être cohérent avec le reste
+// reste à implémenter le double shift=capslock
   sl_mo: sticky_layer_momentary {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
