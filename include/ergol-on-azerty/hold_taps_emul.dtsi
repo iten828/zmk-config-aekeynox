@@ -107,17 +107,20 @@
   #define EL_RTHUMB_HOME   EL_RTHUMB_TT
   #define EL_RTHUMB_TUCK   &EL_sym_shift_altgr
 #elifdef HT_HOME_ROW_MODS
-  #define EL_LTHUMB_TUCK   &EZ_SL(EL_SLAYER)
+  //#define EL_LTHUMB_TUCK   &EZ_SL(EL_SLAYER)
+  #define EL_LTHUMB_TUCK   &EL_dbltap_shift
   #define EL_LTHUMB_HOME   EL_LTHUMB_HRM
   #define EL_LTHUMB_REACH  &sc EL_HRM_LAYER REACH_TAP
   #define EL_RTHUMB_REACH  &sc EL_HRM_LAYER ENTER
   #define EL_RTHUMB_HOME   EL_RTHUMB_HRM
   #define EL_RTHUMB_TUCK   &EL_sym_shift_altgr
+
+  #define EL_SHIFTED_LTHUMB_TUCK &td_to_EL_LAYER
   #define EL_SHIFTED_RTHUMB_HOME  EL_SHIFTED_RTHUMB_HRM
   #define EL_SHIFED_RTHUMB_TUCK &sl EL_SSYMBOLS_LAYER
   #define EL_SHIFTED_RTHUMB_REACH &kp LS(ENTER)
+
   #define EL_NAVNUM_RTHUMB_TUCK  &sl_mo EL_SNUM_NAV_LAYER EL_SNUM_NAV_LAYER
-  // la ligne précédente doit être corrigée pour être dynamique
 #elifdef HT_TWO_THUMB_KEYS
   #define EL_LTHUMB_TUCK   &mt LSHIFT REACH_TAP
   #define EL_LTHUMB_HOME   EL_LTHUMB_S34
@@ -230,5 +233,28 @@
     flavor = "balanced";
     tapping-term-ms = <200>;
     bindings = <&mo>, <&sl>;
-    };
+  };
+// pour ajout shift - double tap/caplock
+  sl_mo_EL_SLAYER: sl_mo_EL_SLAYER {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <0>;
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <200>;
+    bindings = <&mo EL_SLAYER>, <&sl EL_SLAYER >;
+  };
+  EL_dbltap_shift: EL_dbltap_shift {
+    compatible = "zmk,behavior-tap-dance";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings = <&sl_mo_EL_SLAYER>, <&to EL_SLAYER >;
+  };
+  td_to_EL_LAYER: td_to_EL_LAYER {
+    compatible = "zmk,behavior-tap-dance";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings = <&none>, <&to EL_LAYER>;
+        };
+
+
 };
