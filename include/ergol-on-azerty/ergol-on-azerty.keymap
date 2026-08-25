@@ -50,7 +50,7 @@
   &kp LS(FR_Q)  &kp LS(FR_C)  &kp LS(FR_O)  &kp LS(FR_P)  &kp LS(FR_W)      &kp LS(FR_J)  &kp LS(FR_M)  &kp LS(FR_D)  &kp FR_EXLM   &kp LS(FR_Y)
   &kp LS(FR_A)  &kp LS(FR_S)  &kp LS(FR_E)  &kp LS(FR_N)  &kp LS(FR_F)      &kp LS(FR_L)  &kp LS(FR_R)  &kp LS(FR_T)  &kp LS(FR_I)  &kp LS(FR_U)
   &kp LS(FR_Z)  &kp LS(FR_X)  &kp FR_QUES   &kp LS(FR_V)  &kp LS(FR_B)      &kp FR_COLN   &kp LS(FR_H)  &kp LS(FR_G)  &kp FR_SCLN   &kp LS(FR_K)
-                              EL_SHIFTED_LTHUMB_TUCK   &trans  &trans      EL_SHIFTED_RTHUMB_REACH  EL_SHIFTED_RTHUMB_HOME  EL_SHIFED_RTHUMB_TUCK
+                EL_SHIFTED_LTHUMB_TUCK  EL_SHIFTED_LTHUMB_HRM  &trans      EL_SHIFTED_RTHUMB_REACH  EL_SHIFTED_RTHUMB_HOME  EL_SHIFED_RTHUMB_TUCK
            >;
         };
 
