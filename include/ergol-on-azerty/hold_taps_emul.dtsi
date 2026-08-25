@@ -232,8 +232,8 @@
     #binding-cells = <2>;
     flavor = "hold-preferred";
     //tapping-term-ms = <TAPPING_TERM>;
-    tapping-term-ms = <120>
-    quick-tap-ms = <200>;;
+    tapping-term-ms = <120>;
+    quick-tap-ms = <200>;
     bindings = <&mo>, <&sl>;
   };
 // pour ajout shift - double tap/caplock
