@@ -91,6 +91,11 @@
  // #define EL_SHIFTED_LTHUMB_HRM &sc EL_SNUM_NAV_LAYER BACKSPACE
   #define EL_SHIFTED_RTHUMB_HRM &lt EL_SNUM_NAV_LAYER LS(SPACE)
   #define EL_SHIFTED_LTHUMB_HRM &lt EL_NUM_NAV_LAYER BACKSPACE
+// le pouce gauche nav_num a le bon comportement (utilsable uniquement en capslock, renvoit vers num_nav non shifté)
+// le pouce droit nav_num en shift est OK, mais not_ok en capslock, car on renvoit vers le layer num_nav shifté.
+// Ce n’est pas idéal à cause de la partie NAV qui du coup est shifté quand on capslock
+// Pour avoir le bon comportement, il faut ajouter (encore) un nouveau layer dédié
+// pour capslock… capslock-ergol-layer (EL_CAPSLOCK_LAYER) et également un layer ergol_1dk_capslock.
 #endif
 
 #ifdef HT_NONE
@@ -114,7 +119,7 @@
   #define EL_LTHUMB_REACH  &sc EL_HRM_LAYER REACH_TAP
   #define EL_RTHUMB_REACH  &sc EL_HRM_LAYER ENTER
   #define EL_RTHUMB_HOME   EL_RTHUMB_HRM
-  #define EL_RTHUMB_TUCK   &EL_sym_shift_altgr
+    #define EL_RTHUMB_TUCK   &EL_sym_shift_altgr
 
   #define EL_SHIFTED_LTHUMB_TUCK &td_to_EL_LAYER
   #define EL_SHIFTED_LTHUMB_HOME  EL_SHIFTED_LTHUMB_HRM
