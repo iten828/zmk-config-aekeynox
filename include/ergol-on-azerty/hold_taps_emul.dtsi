@@ -230,8 +230,8 @@
   sl_mo: sticky_layer_momentary {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
-    flavor = "balanced";
-    tapping-term-ms = <200>;
+    flavor = "tap-prefered";
+    tapping-term-ms = <TAPPING_TERM>;
     bindings = <&mo>, <&sl>;
   };
 // pour ajout shift - double tap/caplock
@@ -246,13 +246,13 @@
   EL_dbltap_shift: EL_dbltap_shift {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
-    tapping-term-ms = <200>;
+    tapping-term-ms = <TAPPING_TERM>;
     bindings = <&sl_mo EL_SLAYER EL_SLAYER>, <&to EL_SLAYER >;
   };
   td_to_EL_LAYER: td_to_EL_LAYER {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
-    tapping-term-ms = <200>;
+    tapping-term-ms = <TAPPING_TERM>;
     bindings = <&none>, <&to EL_LAYER>;
         };
 
