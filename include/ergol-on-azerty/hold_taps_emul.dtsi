@@ -231,8 +231,8 @@
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
     flavor = "hold-preferred";
-    //tapping-term-ms = <TAPPING_TERM>;
-    tapping-term-ms = <120>;
+    tapping-term-ms = <SHORT_TAPPING_TERM>;
+    //tapping-term-ms = <120>;
     hold-while-undecided;
     bindings = <&mo>, <&sl>;
   };
@@ -248,8 +248,8 @@
   EL_dbltap_shift: EL_dbltap_shift {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
-    //tapping-term-ms = <TAPPING_TERM>;
-    tapping-term-ms = <180>;
+    tapping-term-ms = <TAPPING_TERM>;
+    //tapping-term-ms = <100>;
     bindings = <&sl_mo EL_SLAYER EL_SLAYER>, <&to EL_SLAYER >;
   };
   td_to_EL_LAYER: td_to_EL_LAYER {
