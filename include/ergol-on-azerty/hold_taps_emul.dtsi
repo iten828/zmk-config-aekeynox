@@ -331,7 +331,7 @@
             bindings = <&moEL_SLAYER_or_none>, <&to EL_CAPSLOCK_LAYER>;
         };
 
-    mo_EL_SLAYER_or_to_EL_LAYER: mo_EL_SLAYER_or_to_EL_SLAYER {
+    mo_EL_SLAYER_or_to_EL_LAYER: mo_EL_SLAYER_or_to_EL_LAYER {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
