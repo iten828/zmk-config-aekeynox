@@ -306,5 +306,15 @@
     bindings = <&none>, <&to EL_LAYER>;
   };
 
+    mo_EL_SLAYER_or_to_EL_LAYER: mo_EL_SLAYER_or_to_EL_LAYER{
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <0>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <120>;
+    hold-while-undecided;
+    bindings = <&mo EL_SLAYER>, <&td_to_EL_LAYER>;
+  };
+
+
  };
 };
