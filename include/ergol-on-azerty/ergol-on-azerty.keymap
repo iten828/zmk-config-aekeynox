@@ -47,7 +47,7 @@
             label = "capslock";
             display-name = "Capslock";
             bindings = <
-  &kp FR_Q  &kp FR_C  &kp FR_O     &kp FR_P  &kp FR_W        &kp FR_J    &kp FR_M  &kp FR_D  &sl_no_timeout EL_S1DK_LAYER  &kp FR_Y
+  &kp FR_Q  &kp FR_C  &kp FR_O     &kp FR_P  &kp FR_W        &kp FR_J    &kp FR_M  &kp FR_D  &sl EL_S1DK_LAYER  &kp FR_Y
   HRM_FR_A  &H3 S     &H2 E        &H1 N     &kp FR_F        &kp FR_L    &H1 R     &H2 T     &H3 I             HRM_FR_U
   &kp FR_Z  &kp FR_X  &kp FR_MINS  &kp FR_V  &kp FR_B        &kp FR_DOT  &kp FR_H  &kp FR_G  &kp FR_COMM       &kp FR_K
   EL_CAPSLOCK_LTHUMB_TUCK  EL_LTHUMB_HOME  EL_LTHUMB_REACH   EL_RTHUMB_REACH  EL_RTHUMB_HOME EL_RTHUMB_TUCK
