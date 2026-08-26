@@ -255,7 +255,6 @@
     #binding-cells = <1>;
     release-after-ms = <0>;
     quick-release;      // optionnel
-    bindings = <&sl>;
   };
 // pour ajout shift depuis nav
 // probablement à améliorer
