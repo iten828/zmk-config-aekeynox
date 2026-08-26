@@ -250,12 +250,15 @@
     bindings = <&EL_lkp>, <&EL_losm>;
   };
 // pour émuler la touche morte, un sticky layer sans timeout
-  sl_no_timeout: sl_no_timeout {
+// ne marche pas…
+    /*
+    sl_no_timeout: sl_no_timeout {
     compatible = "zmk,behavior-sticky-layer";
     #binding-cells = <1>;
     release-after-ms = <0>;
     bindings = <&sl>;
   };
+*/
 // pour ajout shift depuis nav
 // probablement à améliorer
 // À renommer pour être cohérent avec le reste
