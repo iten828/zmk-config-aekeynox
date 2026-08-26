@@ -284,7 +284,7 @@
 //        };
 
 
-  td_to_EL_CAPSLOCK_SLAYER: td_to_EL_CAPSLOCK_LAYER {
+  td_to_EL_CAPSLOCK_SLAYER: td_to_EL_CAPSLOCK_SLAYER {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <200>;
@@ -297,7 +297,7 @@
     flavor = "hold-preferred";
     tapping-term-ms = <120>;
     hold-while-undecided;
-    bindings = <&mo EL_SLAYER>, <&td_to_EL_CAPSLOCK_LAYER>;
+    bindings = <&mo EL_SLAYER>, <&td_to_EL_CAPSLOCK_SLAYER>;
   };
 
   td_to_EL_LAYER: td_to_EL_LAYER {
@@ -315,7 +315,5 @@
     hold-while-undecided;
     bindings = <&mo EL_SLAYER>, <&td_to_EL_LAYER>;
   };
-
-
-    };
+ };
 };
