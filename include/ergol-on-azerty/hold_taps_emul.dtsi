@@ -296,7 +296,7 @@
     flavor = "hold-preferred";
     tapping-term-ms = <120>;
     hold-while-undecided;
-    bindings = <&mo EL_SLAYER>, <&td_to_EL_CAPSLOCK_SLAYER>;
+    bindings = <&mo EL_SLAYER>, <&td_to_EL_CAPSLOCK_SLAYER EL_CAPLOCK_SLAYER>;
   };
 
   td_to_EL_LAYER: td_to_EL_LAYER {
@@ -306,7 +306,7 @@
     bindings = <&none>, <&to EL_LAYER>;
   };
 
-    mo_EL_SLAYER_or_to_EL_LAYER: mo_EL_SLAYER_or_to_EL_LAYER{
+  mo_EL_SLAYER_or_to_EL_LAYER: mo_EL_SLAYER_or_to_EL_LAYER{
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <0>;
     flavor = "hold-preferred";
