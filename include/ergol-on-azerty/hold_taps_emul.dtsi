@@ -119,7 +119,8 @@
   #define EL_RTHUMB_TUCK   &EL_sym_shift_altgr
 #elifdef HT_HOME_ROW_MODS
   //#define EL_LTHUMB_TUCK   &EZ_SL(EL_SLAYER)
-  #define EL_LTHUMB_TUCK   &EL_dbltap_shift
+  //#define EL_LTHUMB_TUCK   &EL_dbltap_shift
+  #define EL_LTHUMB_TUCK   &mo_or_to EL_SLAYER EL_SLAYER
   #define EL_LTHUMB_HOME   EL_LTHUMB_HRM
   #define EL_LTHUMB_REACH  &sc EL_HRM_LAYER REACH_TAP
   #define EL_RTHUMB_REACH  &sc EL_HRM_LAYER ENTER
@@ -235,7 +236,13 @@
     flavor = "tap-preferred";
     bindings = <&EL_lkp>, <&EL_losm>;
   };
-
+// pour émuler la touche morte, un sticky layer sans timeout
+  sl_no_timeout: sl_no_timeout {
+    compatible = "zmk,behavior-sticky-layer";
+    #binding-cells = <1>;
+    release-after-ms = <0>;
+    quick-release;      // optionnel
+  };
 // pour ajout shift depuis nav
 // probablement à améliorer
 // À renommer pour être cohérent avec le reste
@@ -258,19 +265,33 @@
 //    quick-tap-ms = <200>;
 //    bindings = <&mo>, <&sl>;
 //  };
-  EL_dbltap_shift: EL_dbltap_shift {
-    compatible = "zmk,behavior-tap-dance";
-    #binding-cells = <0>;
-    tapping-term-ms = <TAPPING_TERM>;
+//  EL_dbltap_shift: EL_dbltap_shift {
+//    compatible = "zmk,behavior-tap-dance";
+//    #binding-cells = <0>;
+//    tapping-term-ms = <TAPPING_TERM>;
     //tapping-term-ms = <100>;
-    bindings = <&sl_mo EL_SLAYER EL_SLAYER>, <&to EL_SLAYER >;
-  };
-  td_to_EL_LAYER: td_to_EL_LAYER {
-    compatible = "zmk,behavior-tap-dance";
-    #binding-cells = <0>;
-    tapping-term-ms = <TAPPING_TERM>;
-    bindings = <&none>, <&to EL_LAYER>;
-        };
+//    bindings = <&sl_mo EL_SLAYER EL_SLAYER>, <&to EL_SLAYER >;
+//  };
+//  td_to_EL_LAYER: td_to_EL_LAYER {
+//    compatible = "zmk,behavior-tap-dance";
+//    #binding-cells = <0>;
+//    tapping-term-ms = <TAPPING_TERM>;
+//    bindings = <&none>, <&to EL_LAYER>;
+//        };
 
+    td_to: td_to {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <1>;
+      tapping-term-ms = <200>;
+      bindings = <&none>, <&to>;
+    };
+    mo_or_to: mo_or_to {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <120>;
+      hold-while-undecided;
+      bindings = <&mo>, <&td_to>;
+    };
 
 };
