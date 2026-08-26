@@ -121,7 +121,7 @@
 #elifdef HT_HOME_ROW_MODS
   //#define EL_LTHUMB_TUCK   &EZ_SL(EL_SLAYER)
   //#define EL_LTHUMB_TUCK   &EL_dbltap_shift
-  #define EL_LTHUMB_TUCK   &mo_EL_SLAYER_or_to_EL_CAPSLOCK_LAYER EL_SLAYER EL_CAPSLOCK_LAYER
+  #define EL_LTHUMB_TUCK   &mo_EL_SLAYER_or_to_EL_CAPSLOCK_LAYER
   #define EL_LTHUMB_HOME   EL_LTHUMB_HRM
   #define EL_LTHUMB_REACH  &sc EL_HRM_LAYER REACH_TAP
   #define EL_RTHUMB_REACH  &sc EL_HRM_LAYER ENTER
@@ -132,7 +132,7 @@
   #define EL_SHIFTED_LTHUMB_HOME  EL_SHIFTED_LTHUMB_HRM
  // #define EL_SHIFTED_LTHUMB_REACH &td_to_EL_LAYER
 
-  #define EL_CAPSLOCK_LTHUMB_TUCK &mo_EL_SLAYER_or_to_EL_LAYER EL_SLAYER EL_LAYER
+  #define EL_CAPSLOCK_LTHUMB_TUCK &mo_EL_SLAYER_or_to_EL_LAYER
   #define EL_SHIFTED_RTHUMB_REACH &kp LS(ENTER)
   #define EL_SHIFTED_RTHUMB_HOME  EL_SHIFTED_RTHUMB_HRM
   #define EL_SHIFED_RTHUMB_TUCK &sl EL_SSYMBOLS_LAYER
@@ -386,18 +386,17 @@ mo_EL_SLAYER_or_none: mo_EL_SLAYER_or_none {
             mo_EL_SLAYER_or_to_EL_CAPSLOCK_LAYER {
 
     compatible = "zmk,behavior-tap-dance";
-    #binding-cells = <2>;
+    #binding-cells = <0>;
     tapping-term-ms = <200>;
-    bindings = <&mo>, <&to>;
-
+    bindings = <&mo EL_SLAYER>, <&to EL_CAPSLOCK_LAYER>;
     };
 
         mo_EL_SLAYER_or_to_EL_LAYER:
               mo_EL_SLAYER_or_to_EL_LAYER {
     compatible = "zmk,behavior-tap-dance";
-    #binding-cells = <2>;
+    #binding-cells = <0>;
     tapping-term-ms = <200>;
-    bindings = <&mo>, <&to>;
+    bindings = <&mo EL_SLAYER>, <&to EL_LAYER>;
     };
 
  };
