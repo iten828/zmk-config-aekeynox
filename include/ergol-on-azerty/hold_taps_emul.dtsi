@@ -259,10 +259,7 @@
     bindings = <&sl>;
   };
 */
-// pour ajout shift depuis nav
-// probablement à améliorer
-// À renommer pour être cohérent avec le reste
-// reste à implémenter le double shift=capslock
+// pour ajout shift depuis nav, n’est plus utilisé
   sl_mo: sticky_layer_momentary {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
@@ -273,119 +270,7 @@
     bindings = <&mo>, <&sl>;
   };
 // pour ajout shift - double tap/caplock
-//  sl_mo_EL_SLAYER: sl_mo_EL_SLAYER {
-//    compatible = "zmk,behavior-hold-tap";
-//    #binding-cells = <0>;
-//    flavor = "balanced";
-//    tapping-term-ms = <200>;
-//    quick-tap-ms = <200>;
-//    bindings = <&mo>, <&sl>;
-//  };
-//  EL_dbltap_shift: EL_dbltap_shift {
-//    compatible = "zmk,behavior-tap-dance";
-//    #binding-cells = <0>;
-//    tapping-term-ms = <TAPPING_TERM>;
-    //tapping-term-ms = <100>;
-//    bindings = <&sl_mo EL_SLAYER EL_SLAYER>, <&to EL_SLAYER >;
-//  };
-//  td_to_EL_LAYER: td_to_EL_LAYER {
-//    compatible = "zmk,behavior-tap-dance";
-//    #binding-cells = <0>;
-//    tapping-term-ms = <TAPPING_TERM>;
-//    bindings = <&none>, <&to EL_LAYER>;
-//        };
-
-/*
-  td_to_EL_CAPSLOCK_SLAYER: td_to_EL_CAPSLOCK_SLAYER {
-    compatible = "zmk,behavior-tap-dance";
-    #binding-cells = <0>;
-    tapping-term-ms = <200>;
-    bindings = <&none>, <&to EL_CAPSLOCK_LAYER>;
-  };
-
-  mo_EL_SLAYER_or_to_EL_SLAYER: mo_EL_SLAYER_or_to_EL_SLAYER{
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <0>;
-    flavor = "hold-preferred";
-    tapping-term-ms = <120>;
-    hold-while-undecided;
-    bindings = <&mo EL_SLAYER>, <&td_to_EL_CAPSLOCK_SLAYER>;
-  };
-
-  td_to_EL_LAYER: td_to_EL_LAYER {
-    compatible = "zmk,behavior-tap-dance";
-    #binding-cells = <0>;
-    tapping-term-ms = <200>;
-    bindings = <&none>, <&to EL_LAYER>;
-  };
-
-  mo_EL_SLAYER_or_to_EL_LAYER: mo_EL_SLAYER_or_to_EL_LAYER{
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <0>;
-    flavor = "hold-preferred";
-    tapping-term-ms = <120>;
-    hold-while-undecided;
-    bindings = <&mo EL_SLAYER>, <&td_to_EL_LAYER>;
-  };
-*/
-
-
-/*
-    moEL_SLAYER_or_none: mo2_or_none {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <120>;
-            hold-while-undecided;
-            bindings = <&mo EL_SLAYER>, <&none>;
-        };
-
-    mo_EL_SLAYER_or_to_EL_SLAYER: mo_EL_SLAYER_or_to_EL_SLAYER {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&moEL_SLAYER_or_none>, <&to EL_CAPSLOCK_LAYER>;
-        };
-
-    mo_EL_SLAYER_or_to_EL_LAYER: mo_EL_SLAYER_or_to_EL_LAYER {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&moEL_SLAYER_or_none>, <&to EL_LAYER>;
-        };
-*/
-
-/*
-mo_EL_SLAYER_or_none: mo_EL_SLAYER_or_none {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <120>;
-            hold-while-undecided;
-            bindings = <&mo_EL_SLAYER>, <&none>;
-        };
-
-        mo_EL_SLAYER_or_to_EL_CAPSLOCK_LAYER:
-            mo_EL_SLAYER_or_to_EL_CAPSLOCK_LAYER {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings =
-                <&mo_EL_SLAYER_or_none>,
-                <&to EL_CAPSLOCK_LAYER>;
-        };
-    mo_EL_SLAYER_or_to_EL_LAYER:
-              mo_EL_SLAYER_or_to_EL_LAYER {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings =
-                <&mo_EL_SLAYER_or_none>,
-                <&to EL_LAYER>;
-        };
-
-*/
-        mo_EL_SLAYER_or_to_EL_CAPSLOCK_LAYER:
+       mo_EL_SLAYER_or_to_EL_CAPSLOCK_LAYER:
             mo_EL_SLAYER_or_to_EL_CAPSLOCK_LAYER {
 
     compatible = "zmk,behavior-tap-dance";
