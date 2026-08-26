@@ -43,6 +43,22 @@
     //                -- On shifte les touches 1 à 1 plutôt que d’utiliser le modifieur shift global.
     //                -- Ça permet d’avoir une
     //                -- meilleure gestion du shift sur les couches sym et navnum. Je n’ai pas su faire autrement.
+    capslock_ergol-layer {
+            label = "capslock";
+            display-name = "Capslock";
+            bindings = <
+  &kp FR_Q  &kp FR_C  &kp FR_O     &kp FR_P  &kp FR_W        &kp FR_J    &kp FR_M  &kp FR_D  &sl_no_timeout EL_1DK_LAYER  &kp FR_Y
+  HRM_FR_A  &H3 S     &H2 E        &H1 N     &kp FR_F        &kp FR_L    &H1 R     &H2 T     &H3 I             HRM_FR_U
+  &kp FR_Z  &kp FR_X  &kp FR_MINS  &kp FR_V  &kp FR_B        &kp FR_DOT  &kp FR_H  &kp FR_G  &kp FR_COMM       &kp FR_K
+      EL_LTHUMB_TUCK  EL_LTHUMB_HOME  EL_LTHUMB_REACH        EL_RTHUMB_REACH  EL_RTHUMB_HOME EL_RTHUMB_TUCK
+            >;
+        };
+
+
+    // 9. Ergol Shift --
+    //                -- On shifte les touches 1 à 1 plutôt que d’utiliser le modifieur shift global.
+    //                -- Ça permet d’avoir une
+    //                -- meilleure gestion du shift sur les couches sym et navnum. Je n’ai pas su faire autrement.
     sergol-layer {
             label = "Shift";
             display-name = "Shift";
@@ -54,7 +70,7 @@
            >;
         };
 
-    // 9. Ergol 1DK layer --
+    // 10. Ergol 1DK layer --
     //                    --
     ergol_1dk_layer {
             label = "1dk";
@@ -67,7 +83,7 @@
             >;
         };
 
-    // 10. Ergol Shift 1DK --
+    // 11. Ergol Shift 1DK --
     //                 --
     sergol_1dk_layer {
             label = "s1dk";
@@ -80,7 +96,7 @@
             >;
         };
 
-    // 11. Ergol NumLock --
+    // 12. Ergol NumLock --
     //                   --
      ergol_num_lock_layer {
             display-name = "NumLock";
@@ -92,7 +108,7 @@
             >;
         };
 
-    // 12. Ergol SYM   --
+    // 13. Ergol SYM   --
     //                 --
      ergol_sym_layer {
             label = "sym";
@@ -105,7 +121,7 @@
             >;
         };
 
-    // 13. Ergol SSYM  --
+    // 14. Ergol SSYM  --
     //                 --
     sergol_sym_layer {
             label = "ssym";
@@ -118,7 +134,7 @@
             >;
         };
 
-    // 14. Ergol VimNav layer --
+    // 15. Ergol VimNav layer --
     //                        --
     ergol_vim_nav_layer {
              display-name = "VimNav";
@@ -130,7 +146,7 @@
       >;
     };
 
-    // 15. Ergol NumNav --
+    // 16. Ergol NumNav --
     //                  --
     ergol_numnav_layer {
             label = "ergol-NumNav";
@@ -143,7 +159,7 @@
             >;
         };
 
-                              // 16. Ergol Shift NumNav --
+    // 17. Ergol Shift NumNav --
     //                        --
     sergol_numnav_layer {
             label = "snumnav";
@@ -156,7 +172,7 @@
             >;
         };
 
-    // 17. NumRow layer --
+    // 18. NumRow layer --
     //                  --
     ergol_num_row_layer {
       display-name = "NumRow";
@@ -171,7 +187,7 @@
 
 // Common layers -----------------------------------------------------------------------------------------------
 
-   // 18.Gaming layer -- TODO
+   // 19.Gaming layer -- TODO
     //                --
     //                --
     gaming_layer {
@@ -186,7 +202,7 @@
         };
 
 
-    // 19. NumRow layer -- bring the numbers to the homerow, keep shift+numbers for shortcuts and symbols
+    // 20. NumRow layer -- bring the numbers to the homerow, keep shift+numbers for shortcuts and symbols
     //                 -- space becomes shift+space, which is a no-break space with some OS layouts (e.g. Ergol)
     //                 -- best used along with the VimNav layer
     gaming_num_row_layer: gaming_num_row_layer {
@@ -198,7 +214,7 @@
                                       &trans , &kp RS(SPACE) , &trans       ,   &kp ESC , &kp LS(SPACE) , &kp RALT
       )>;
     };
-    // 20.
+    // 21.
     gaming_nav_num_layer: gaming_nav_num_layer {
       display-name = "NavNum";
       bindings = <SELENIUM_KEYMAP_BINDINGS(
@@ -210,7 +226,7 @@
     };
 
 
-    // 21.
+    // 22.
     //
     gaming_symbols_layer: gaming_symbols_layer {
       display-name = "Symbols";
@@ -222,7 +238,7 @@
       )>;
     };
 
-    // 22. Functions layer --
+    // 23. Functions layer --
     //                    --
     Functions {
             label = "Functions";
@@ -235,7 +251,7 @@
             >;
         };
 
-    // 23. BlueTooth layer --
+    // 24. BlueTooth layer --
     //                    --
     BT {
             label = "BT";

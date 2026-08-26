@@ -3,23 +3,24 @@
 
 // clang-format off
 #define EL_LAYER           8
-#define EL_SLAYER          9
-#define EL_1DK_LAYER      10
-#define EL_S1DK_LAYER     11
-#define EL_NUM_LOCK_LAYER 12
-#define EL_SYMBOLS_LAYER  13
-#define EL_SSYMBOLS_LAYER 14
-#define EL_VIM_NAV_LAYER  15
-#define EL_NUM_NAV_LAYER  16
-#define EL_SNUM_NAV_LAYER 17
-#define EL_NUM_ROW_LAYER  18
+#define EL_CAPSLOCK_LAYER  9
+#define EL_SLAYER         10
+#define EL_1DK_LAYER      11
+#define EL_S1DK_LAYER     12
+#define EL_NUM_LOCK_LAYER 13
+#define EL_SYMBOLS_LAYER  14
+#define EL_SSYMBOLS_LAYER 15
+#define EL_VIM_NAV_LAYER  16
+#define EL_NUM_NAV_LAYER  17
+#define EL_SNUM_NAV_LAYER 18
+#define EL_NUM_ROW_LAYER  19
 
-#define GAME_LAYER        19
-#define G_NUM_ROW_LAYER   20
-#define G_NAVNUM_LAYER    21
-#define G_SYMBOLS_LAYER   22
-#define FUNCTION_LAYER    23
-#define BT                24
+#define GAME_LAYER        20
+#define G_NUM_ROW_LAYER   21
+#define G_NAVNUM_LAYER    22
+#define G_SYMBOLS_LAYER   23
+#define FUNCTION_LAYER    24
+#define BT                25
 
 /**
  * Home Rew
@@ -127,7 +128,7 @@
   #define EL_RTHUMB_HOME   EL_RTHUMB_HRM
   #define EL_RTHUMB_TUCK   &EL_sym_shift_altgr
 
-  #define EL_SHIFTED_LTHUMB_TUCK  &td_to EL_LAYER
+  #define EL_SHIFTED_LTHUMB_TUCK  &none //&td_to EL_LAYER
   #define EL_SHIFTED_LTHUMB_HOME  EL_SHIFTED_LTHUMB_HRM
  // #define EL_SHIFTED_LTHUMB_REACH &td_to_EL_LAYER
   #define EL_SHIFTED_RTHUMB_REACH &kp LS(ENTER)
@@ -279,27 +280,39 @@
 //    bindings = <&none>, <&to EL_LAYER>;
 //        };
 
-    td_to: td_to {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <1>;
-      tapping-term-ms = <200>;
-      bindings = <&none>, <&to>;
 
-td_to_EL_SLAYER: td_to_EL_SLAYER {
+  td_to_EL_CAPSLOCK_SLAYER: td_to_EL_CAPSLOCK_LAYER {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <200>;
-    bindings = <&none>, <&to EL_SLAYER>;
-};
+    bindings = <&none>, <&to EL_CAPSLOCK_LAYER>;
+  };
 
-mo_or_to_EL_SLAYER: mo_or_to_EL_SLAYER {
+  mo_or_to_EL_SLAYER: mo_or_to_EL_SLAYER {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <0>;
     flavor = "hold-preferred";
     tapping-term-ms = <120>;
     hold-while-undecided;
-    bindings = <&mo EL_SLAYER>, <&td_to_EL_SLAYER>;
-};
+    bindings = <&mo EL_SLAYER>, <&td_to_EL_CAPSLOCK_LAYER>;
+  };
+
+  td_to_EL_LAYER: td_to_EL_LAYER {
+    compatible = "zmk,behavior-tap-dance";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings = <&none>, <&to EL_LAYER>;
+  };
+
+  mo_or_to_EL_SLAYER: mo_or_to_EL_SLAYER {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <0>;
+    flavor = "hold-preferred";
+    tapping-term-ms = <120>;
+    hold-while-undecided;
+    bindings = <&mo EL_SLAYER>, <&td_to_EL_LAYER>;
+  };
+
 
     };
 };
