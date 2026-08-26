@@ -131,6 +131,9 @@
   #define EL_SHIFTED_LTHUMB_TUCK  &none //&td_to EL_LAYER
   #define EL_SHIFTED_LTHUMB_HOME  EL_SHIFTED_LTHUMB_HRM
  // #define EL_SHIFTED_LTHUMB_REACH &td_to_EL_LAYER
+
+  #define EL_CAPSLOCK_LTHUMB_TUCK
+
   #define EL_SHIFTED_RTHUMB_REACH &kp LS(ENTER)
   #define EL_SHIFTED_RTHUMB_HOME  EL_SHIFTED_RTHUMB_HRM
   #define EL_SHIFED_RTHUMB_TUCK &sl EL_SSYMBOLS_LAYER
@@ -288,7 +291,7 @@
     bindings = <&none>, <&to EL_CAPSLOCK_LAYER>;
   };
 
-  mo_or_to_EL_SLAYER: mo_or_to_EL_SLAYER {
+  mo_EL_SLAYER_or_to_EL_SLAYER: mo_EL_SLAYER_or_to_EL_SLAYER{
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <0>;
     flavor = "hold-preferred";
@@ -304,7 +307,7 @@
     bindings = <&none>, <&to EL_LAYER>;
   };
 
-  mo_or_to_EL_SLAYER: mo_or_to_EL_SLAYER {
+  mo_EL_SLAYER_or_to_EL_LAYER: mo_EL_SLAYER_or_to_EL_LAYER {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <0>;
     flavor = "hold-preferred";
