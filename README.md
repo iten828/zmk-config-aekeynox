@@ -1,7 +1,7 @@
 Ækeynox with Ergo-l emulation for azerty Windows for Temper Keyboard
 ====================================================================================================
 This is a [Ækeynox](https://github.com/OneDeadKey/zmk-config-aekeynox) branch for the [Temper](https://github.com/raeedcho/temper) Keyboard.
-It keeps the standard Ækeynox implemantation on the base layer, but add an [Ergo-l](https://ergol.org/) emulation for Azerty Windows computer, in HRM non VI mode.
+It keeps the standard Ækeynox implementation on the base layer, but add an [Ergo-l](https://ergol.org/) emulation for Azerty Windows computer, in HRM non VI mode.
 
 You can toggle between standard and emulation by pressing Function+shift+v (the 'v' key in ergol layout)
 
