@@ -89,10 +89,10 @@
             label = "s1dk";
             display-name = "s1dk";
             bindings = <
-  &circ LS(FR_A)  &a01xx K9 K9  &a01xx K4 K0    &circ LS(FR_O)  &to EL_LAYER         &to EL_LAYER  &to EL_LAYER  &to EL_LAYER    &circ LS(FR_U)  &to EL_LAYER
-  &agrv LS(FR_A)  &a1xx K4 K4   &agrv LS(FR_E)  &circ LS(FR_E)  &tild LS(FR_N)       &to EL_LAYER  &to EL_LAYER  &circ LS(FR_I)  &diae LS(FR_I)  &agrv LS(FR_U)
-  &a01xx K9 K8    &to EL_LAYER  &to EL_LAYER    &to EL_LAYER    &to EL_LAYER         &to EL_LAYER  &to EL_LAYER  &to EL_LAYER    &ax K7          &a01xx K7 K4
-                                &trans          &trans          &trans               &trans        &trans        &trans
+  &circ LS(FR_A)  &a01xx K9 K9  &a01xx K4 K0    &circ LS(FR_O)  &to EL_LAYER         &trans  &trans  &trans          &circ LS(FR_U)  &trans
+  &agrv LS(FR_A)  &a1xx K4 K4   &agrv LS(FR_E)  &circ LS(FR_E)  &tild LS(FR_N)       &trans  &trans  &circ LS(FR_I)  &diae LS(FR_I)  &agrv LS(FR_U)
+  &a01xx K9 K8    &trans        &trans          &trans          &trans               &trans  &trans  &trans          &ax K7          &a01xx K7 K4
+                                &trans          &trans          &trans               &trans          &trans          &trans
             >;
         };
 
