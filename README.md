@@ -4,7 +4,7 @@ This is my personnal [Ækeynox](https://github.com/OneDeadKey/zmk-config-aekeyno
 It keeps the standard Ækeynox implementation on the base layer, but add an [Ergo-l](https://ergol.org/) emulation for Azerty Windows computer, in HRM non VI mode.
 This can be mandatory on azerty windows computers on wich you don’t have the permissions to install the Ergo-L layout driver (typically in a professional environment).
 
-You can toggle between standard and emulation by pressing Function+j (the 'j' key in ergol layout)
+You can toggle between standard and emulation by pressing Function+j (the 'j' key in Ergo-l layout)
 
 The Ergol-l layout is not totally implemented, but there are as much complete layers I succeeded to emul:
 base, 1dk, navnum, numlock, sym, caplock and their shifted version.
