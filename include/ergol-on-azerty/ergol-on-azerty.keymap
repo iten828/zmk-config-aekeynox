@@ -187,9 +187,9 @@
 
 // Common layers -----------------------------------------------------------------------------------------------
 
-    // 20.Gaming layer -- TODO
-    //                --
-    //                --
+    // 20.Gaming layer -- WIP
+    //                 --
+    //                 --
     gaming_layer {
             label = "Gaming";
             display-name = "Gaming";
@@ -201,10 +201,8 @@
             >;
         };
 
-
-    // 21. NumRow layer -- bring the numbers to the homerow, keep shift+numbers for shortcuts and symbols
-    //                 -- space becomes shift+space, which is a no-break space with some OS layouts (e.g. Ergol)
-    //                 -- best used along with the VimNav layer
+    // 21. Gaming NumRow layer -- WIP
+    //                         --
     gaming_num_row_layer: gaming_num_row_layer {
       display-name = "NumRow";
       bindings = <SELENIUM_KEYMAP_BINDINGS(
@@ -214,7 +212,9 @@
                                       &trans , &kp RS(SPACE) , &trans       ,   &kp ESC , &kp LS(SPACE) , &kp RALT
       )>;
     };
-    // 22.
+
+    // 22.  Gaming NavNum layer -- WIP
+    //                          --
     gaming_nav_num_layer: gaming_nav_num_layer {
       display-name = "NavNum";
       bindings = <SELENIUM_KEYMAP_BINDINGS(
@@ -225,8 +225,7 @@ NAV_LTHUMB_TUCK , &sc FN_MEDIA_LAYER DEL , NAV_LTHUMB_REACH   ,   &kp ESCAPE , &
       )>;
     };
 
-
-    // 23.
+    // 23.  Gaming Symbols layer -- WIP
     //
     gaming_symbols_layer: gaming_symbols_layer {
       display-name = "Symbols";
@@ -239,7 +238,7 @@ NAV_LTHUMB_TUCK , &sc FN_MEDIA_LAYER DEL , NAV_LTHUMB_REACH   ,   &kp ESCAPE , &
     };
 
     // 24. Functions layer --
-    //                    --
+    //                     --
     Functions {
             label = "Functions";
             display-name = "Functions";
