@@ -15,7 +15,7 @@
   keymap {
     compatible = "zmk,keymap";
 
-    // 7. Ergol over Windows azerty layer --
+    // 8. Ergol over Windows azerty layer --
     //                                    -- Configuré en mode HT_HOME_ROW_MODS
     //                                    -- les autres modes n’ont pas été testé et nécessitent encore du travail.
     //
@@ -39,7 +39,7 @@
             >;
         };
 
-    // 8. Ergol Shift --
+    // 9. Ergol Shift --
     //                -- On shifte les touches 1 à 1 plutôt que d’utiliser le modifieur shift global.
     //                -- Ça permet d’avoir une
     //                -- meilleure gestion du shift sur les couches sym et navnum. Je n’ai pas su faire autrement.
@@ -55,7 +55,7 @@
         };
 
 
-    // 9. Ergol Shift --
+    // 10. Ergol Shift --
     //                -- On shifte les touches 1 à 1 plutôt que d’utiliser le modifieur shift global.
     //                -- Ça permet d’avoir une
     //                -- meilleure gestion du shift sur les couches sym et navnum. Je n’ai pas su faire autrement.
@@ -70,7 +70,7 @@
            >;
         };
 
-    // 10. Ergol 1DK layer --
+    // 11. Ergol 1DK layer --
     //                    --
     ergol_1dk_layer {
             label = "1dk";
@@ -83,7 +83,7 @@
             >;
         };
 
-    // 11. Ergol Shift 1DK --
+    // 12. Ergol Shift 1DK --
     //                 --
     sergol_1dk_layer {
             label = "s1dk";
@@ -96,7 +96,7 @@
             >;
         };
 
-    // 12. Ergol NumLock --
+    // 13. Ergol NumLock --
     //                   --
      ergol_num_lock_layer {
             display-name = "NumLock";
@@ -108,7 +108,7 @@
             >;
         };
 
-    // 13. Ergol SYM   --
+    // 14. Ergol SYM   --
     //                 --
      ergol_sym_layer {
             label = "sym";
@@ -121,7 +121,7 @@
             >;
         };
 
-    // 14. Ergol SSYM  --
+    // 15. Ergol SSYM  --
     //                 --
     sergol_sym_layer {
             label = "ssym";
@@ -134,7 +134,7 @@
             >;
         };
 
-    // 15. Ergol VimNav layer --
+    // 16. Ergol VimNav layer --
     //                        --
     ergol_vim_nav_layer {
              display-name = "VimNav";
@@ -146,7 +146,7 @@
       >;
     };
 
-    // 16. Ergol NumNav --
+    // 17. Ergol NumNav --
     //                  --
     ergol_numnav_layer {
             label = "ergol-NumNav";
@@ -159,20 +159,20 @@
             >;
         };
 
-    // 17. Ergol Shift NumNav --
+    // 18. Ergol Shift NumNav --
     //                        --
     sergol_numnav_layer {
             label = "snumnav";
             display-name = "sNumNav";
             bindings = <
-  &kp ESC    &kp LS(HOME)  &kp LS(UP)    &kp LS(END)    &kp LS(PG_UP)       &kp EL_NUM_LOCK_LAYER  &kp FR_AMPR  &kp FR_ASTR  &kp FR_HASH  &kp FR_SLSH
-  EL_X_ALL   &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(RIGHT)  &kp LS(PG_DN)       &kp FR_MINS            &kp FR_DLR   &kp FR_PERC  &a0xx K9 K4  &kp FR_AT
-  EL_X_UNDO  EL_X_CUT      EL_X_COPY     EL_X_PASTE     EL_X_REDO           &kp FR_COMM            &kp FR_EURO  &a1xx K7 K4  &a1xx K7 K5  &kp FR_DOT
-                &trans     &sc FUNCTION_LAYER DEL       &kp LS(TAB)         &kp ESCAPE             &trans       &EZ_LSK(RALT)
+ &kp ESC    &kp LS(HOME)  &kp LS(UP)    &kp LS(END)    &kp LS(PG_UP)       &kp EL_NUM_LOCK_LAYER  &kp FR_AMPR  &kp FR_ASTR  &kp FR_HASH  &kp FR_SLSH
+ EL_X_ALL   &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(RIGHT)  &kp LS(PG_DN)       &kp FR_MINS            &kp FR_DLR   &kp FR_PERC  &a0xx K9 K4  &kp FR_AT
+ EL_X_UNDO  EL_X_CUT      EL_X_COPY     EL_X_PASTE     EL_X_REDO           &kp FR_COMM            &kp FR_EURO  &a1xx K7 K4  &a1xx K7 K5  &kp FR_DOT
+               &trans     &sc FUNCTION_LAYER DEL       &kp LS(TAB)         &kp ESCAPE             &trans       &EZ_LSK(RALT)
             >;
         };
 
-    // 18. NumRow layer --
+    // 19. NumRow layer --
     //                  --
     ergol_num_row_layer {
       display-name = "NumRow";
@@ -187,7 +187,7 @@
 
 // Common layers -----------------------------------------------------------------------------------------------
 
-   // 19.Gaming layer -- TODO
+    // 20.Gaming layer -- TODO
     //                --
     //                --
     gaming_layer {
@@ -202,43 +202,43 @@
         };
 
 
-    // 20. NumRow layer -- bring the numbers to the homerow, keep shift+numbers for shortcuts and symbols
+    // 21. NumRow layer -- bring the numbers to the homerow, keep shift+numbers for shortcuts and symbols
     //                 -- space becomes shift+space, which is a no-break space with some OS layouts (e.g. Ergol)
     //                 -- best used along with the VimNav layer
     gaming_num_row_layer: gaming_num_row_layer {
       display-name = "NumRow";
       bindings = <SELENIUM_KEYMAP_BINDINGS(
-        &trans  ,  &kp RS(N1) &kp RS(N2) &kp RS(N3) &kp RS(N4) &kp RS(N5)   ,   &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0)  ,  &trans ,
-        &trans  ,  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5       ,   &kp N6     &kp N7     &kp N8     &kp N9     &kp N0      ,  &trans ,
-        &trans  ,  &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH     ,   S_MINUS    S_COMMA    S_DOT      S_COLON    S_FSLH      ,  &trans ,
+  &trans  ,  &kp RS(N1) &kp RS(N2) &kp RS(N3) &kp RS(N4) &kp RS(N5)   ,   &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0)  ,  &trans ,
+  &trans  ,  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5       ,   &kp N6     &kp N7     &kp N8     &kp N9     &kp N0      ,  &trans ,
+  &trans  ,  &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH     ,   S_MINUS    S_COMMA    S_DOT      S_COLON    S_FSLH      ,  &trans ,
                                       &trans , &kp RS(SPACE) , &trans       ,   &kp ESC , &kp LS(SPACE) , &kp RALT
       )>;
     };
-    // 21.
+    // 22.
     gaming_nav_num_layer: gaming_nav_num_layer {
       display-name = "NavNum";
       bindings = <SELENIUM_KEYMAP_BINDINGS(
-        &trans  ,  &kp ESC  &kp HOME &kp UP   &kp END   &kp PG_UP   ,   &to NUM_LOCK_LAYER S_N7  S_N8  S_N9  S_FSLH  ,  &trans ,
-        &trans  ,  X_ALL    &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN   ,   S_MINUS            S_N4  S_N5  S_N6  S_N0    ,  &trans ,
-        &trans  ,  X_UNDO   X_CUT    X_COPY   X_PASTE   X_REDO      ,   S_COMMA            S_N1  S_N2  S_N3  S_DOT   ,  &trans ,
-      NAV_LTHUMB_TUCK , &sc FN_MEDIA_LAYER DEL , NAV_LTHUMB_REACH   ,   &kp ESCAPE , &lt FN_MEDIA_LAYER LS(SPACE) , &EZ_LSK(RALT)
+  &trans  ,  &kp ESC  &kp HOME &kp UP   &kp END   &kp PG_UP   ,   &to NUM_LOCK_LAYER S_N7  S_N8  S_N9  S_FSLH  ,  &trans ,
+  &trans  ,  X_ALL    &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN   ,   S_MINUS            S_N4  S_N5  S_N6  S_N0    ,  &trans ,
+  &trans  ,  X_UNDO   X_CUT    X_COPY   X_PASTE   X_REDO      ,   S_COMMA            S_N1  S_N2  S_N3  S_DOT   ,  &trans ,
+NAV_LTHUMB_TUCK , &sc FN_MEDIA_LAYER DEL , NAV_LTHUMB_REACH   ,   &kp ESCAPE , &lt FN_MEDIA_LAYER LS(SPACE) , &EZ_LSK(RALT)
       )>;
     };
 
 
-    // 22.
+    // 23.
     //
     gaming_symbols_layer: gaming_symbols_layer {
       display-name = "Symbols";
       bindings = <SELENIUM_KEYMAP_BINDINGS(
-        &trans  ,  S_CARET S_LT    S_GT    S_DLLR  S_PRCNT   ,   S_AT    S_AMPS  S_STAR  S_SQT   S_GRAVE  ,  &trans ,
-        &trans  ,  S_LBRC  S_LPAR  S_RPAR  S_RBRC  S_EQUAL   ,   S_BSLH  S_PLUS  S_MINUS S_FSLH  S_DQT    ,  &trans ,
-        &trans  ,  S_TILDE S_LBKT  S_RBKT  S_UNDER S_HASH    ,   S_PIPE  S_EXCL  S_SEMI  S_COLON S_QMARK  ,  &trans ,
-                     SYM_NUM_LAYER , &kp SPACE , &kp ENTER   ,   &trans ,  &trans ,  &trans
+ &trans  ,  S_CARET S_LT    S_GT    S_DLLR  S_PRCNT   ,   S_AT    S_AMPS  S_STAR  S_SQT   S_GRAVE  ,  &trans ,
+ &trans  ,  S_LBRC  S_LPAR  S_RPAR  S_RBRC  S_EQUAL   ,   S_BSLH  S_PLUS  S_MINUS S_FSLH  S_DQT    ,  &trans ,
+ &trans  ,  S_TILDE S_LBKT  S_RBKT  S_UNDER S_HASH    ,   S_PIPE  S_EXCL  S_SEMI  S_COLON S_QMARK  ,  &trans ,
+              SYM_NUM_LAYER , &kp SPACE , &kp ENTER   ,   &trans ,  &trans ,  &trans
       )>;
     };
 
-    // 23. Functions layer --
+    // 24. Functions layer --
     //                    --
     Functions {
             label = "Functions";
@@ -251,7 +251,7 @@
             >;
         };
 
-    // 24. BlueTooth layer --
+    // 25. BlueTooth layer --
     //                    --
     BT {
             label = "BT";
