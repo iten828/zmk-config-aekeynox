@@ -218,9 +218,9 @@
     gaming_nav_num_layer: gaming_nav_num_layer {
       display-name = "NavNum";
       bindings = <SELENIUM_KEYMAP_BINDINGS(
-  &trans  ,  &kp ESC  &kp HOME &kp UP   &kp END   &kp PG_UP   ,   &to EL_NUM_LOCK_LAYER &kp FR7  &kp FR8  &kp FR9  &kp FR_SLSH  ,   &trans ,
-  &trans  ,  X_ALL    &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN   ,   S_MINUS               &kp FR4  &kp FR5  &kp FR6  &kp FR0      ,   &trans ,
-  &trans  ,  X_UNDO   X_CUT    X_COPY   X_PASTE   X_REDO      ,   S_COMMA               &kp FR1  &kp FR2  &kp FR3  &kp FR_DOT   ,   &trans ,
+  &trans  ,  &kp ESC  &kp HOME &kp UP   &kp END   &kp PG_UP   ,   &to EL_NUM_LOCK_LAYER &kp FR_7  &kp FR_8  &kp FR_9  &kp FR_SLSH  ,   &trans ,
+  &trans  ,  X_ALL    &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN   ,   S_MINUS               &kp FR_4  &kp FR_5  &kp FR_6  &kp FR_0      ,   &trans ,
+  &trans  ,  X_UNDO   X_CUT    X_COPY   X_PASTE   X_REDO      ,   S_COMMA               &kp FR_1  &kp FR_2  &kp FR_3  &kp FR_DOT   ,   &trans ,
   NAV_LTHUMB_TUCK , &sc FN_MEDIA_LAYER DEL , NAV_LTHUMB_REACH ,   &kp ESCAPE ,         &lt FN_MEDIA_LAYER LS(SPACE) , &EZ_LSK(RALT)
       )>;
     };
