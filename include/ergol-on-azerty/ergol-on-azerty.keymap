@@ -177,10 +177,10 @@
     ergol_num_row_layer {
       display-name = "NumRow";
       bindings = <
- &kp FR_EXLM  &kp FR_AT  &kp FR_HASH  &kp FR_DLR  &kp FR_PERC       &a0xx K9 K4  &kp FR_AMPR    &kp FR_ASTR  &kp FR_LPRN  &kp FR_RPRN
- &kp FR_1     &kp FR_2   &kp FR_3     &kp FR_4    &kp FR_5          &kp FR_6     &kp FR_7       &kp FR_8     &kp FR_9     &kp FR_0
- &none        &none      &none        &none       &none             &kp FR_MINS  &kp FR_COMM    &kp FR_DOT   &kp FR_COLN  &kp FR_SLSH
-                         &trans     &kp RS(SPACE) &trans            &trans       &kp LS(SPACE)  &kp RALT
+ &kp FR_EXLM  &kp FR_AT  &kp FR_HASH  &kp FR_DLR    &kp FR_PERC       &a0xx K9 K4  &kp FR_AMPR    &kp FR_ASTR  &kp FR_LPRN  &kp FR_RPRN
+ &kp FR_1     &kp FR_2   &kp FR_3     &kp FR_4      &kp FR_5          &kp FR_6     &kp FR_7       &kp FR_8     &kp FR_9     &kp FR_0
+ &none        &none      &none        &none         &none             &kp FR_MINS  &kp FR_COMM    &kp FR_DOT   &kp FR_COLN  &kp FR_SLSH
+                         &trans       &kp RS(SPACE) &trans            &trans       &kp LS(SPACE)  &kp RALT
             >;
         };
 
@@ -219,9 +219,9 @@
       display-name = "NavNum";
       bindings = <SELENIUM_KEYMAP_BINDINGS(
   &trans  ,  &kp ESC  &kp HOME &kp UP   &kp END   &kp PG_UP   ,   &to EL_NUM_LOCK_LAYER &kp FR_7  &kp FR_8  &kp FR_9  &kp FR_SLSH  ,   &trans ,
-  &trans  ,  X_ALL    &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN   ,   S_MINUS               &kp FR_4  &kp FR_5  &kp FR_6  &kp FR_0      ,   &trans ,
+  &trans  ,  X_ALL    &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN   ,   S_MINUS               &kp FR_4  &kp FR_5  &kp FR_6  &kp FR_0     ,   &trans ,
   &trans  ,  X_UNDO   X_CUT    X_COPY   X_PASTE   X_REDO      ,   S_COMMA               &kp FR_1  &kp FR_2  &kp FR_3  &kp FR_DOT   ,   &trans ,
-      NAV_LTHUMB_TUCK , &sc FN_MEDIA_LAYER DEL ,  &kp LS(TAB) ,   &kp ESCAPE ,         &lt FN_MEDIA_LAYER LS(SPACE) , &EZ_LSK(RALT)
+      NAV_LTHUMB_TUCK , &sc FN_MEDIA_LAYER DEL ,  &kp LS(TAB) ,   &kp ESCAPE ,          &lt FN_MEDIA_LAYER LS(SPACE) , &EZ_LSK(RALT)
       )>;
     };
 
