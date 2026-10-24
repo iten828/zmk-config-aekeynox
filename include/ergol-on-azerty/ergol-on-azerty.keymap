@@ -71,7 +71,7 @@
         };
 
     // 11. Ergol 1DK layer --
-    //                    --
+    //                     --
     ergol_1dk_layer {
             label = "1dk";
             display-name = "1dk";
@@ -84,7 +84,7 @@
         };
 
     // 12. Ergol Shift 1DK --
-    //                 --
+    //                     --
     sergol_1dk_layer {
             label = "s1dk";
             display-name = "s1dk";
