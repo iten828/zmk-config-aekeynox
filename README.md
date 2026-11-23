@@ -11,6 +11,10 @@ I have added a custom function layer and a custom BT layer, so function layer is
 
 Some pictures of the tempers I built, with [anodized aluminum case](https://github.com/CoenTurk/temper-metal) from [CoenTurk](https://github.com/CoenTurk):
 ![temper](temper.jpg)
-![temper1](temper1.jpg)
+![temper2](temper1.jpg)
 ![temper2](temper2.jpg)
 ![temper3](temper3.jpg)
+![temper4](temper3.jpg)
+![temper5](temper3.jpg)
+![temper6](temper3.jpg)
+![temper7](temper3.jpg)
