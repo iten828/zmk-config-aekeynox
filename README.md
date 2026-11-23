@@ -10,10 +10,10 @@ base, 1dk, navnum, numlock, sym, caplock and their shifted version.
 I have added a custom function layer and a custom BT layer, so function layer is not totally identical to default selenium implementation.
 
 Some pictures of the tempers I built, with [anodized aluminum case](https://github.com/CoenTurk/temper-metal) from [CoenTurk](https://github.com/CoenTurk):
-![temper](temper.jpg)
-![temper2](temper2.jpg)
-![temper3](temper3.jpg)
-![temper4](temper4.jpg)
-![temper5](temper5.jpg)
-![temper6](temper6.jpg)
-![temper7](temper7.jpg)
+![temper](pictures/temper.jpg)
+![temper2](pictures/temper2.jpg)
+![temper3](pictures/temper3.jpg)
+![temper4](pictures/temper4.jpg)
+![temper5](pictures/temper5.jpg)
+![temper6](pictures/temper6.jpg)
+![temper7](pictures/temper7.jpg)
